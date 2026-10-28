@@ -1,0 +1,103 @@
+<svg width="1440" height="120" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_7_247)">
+<g clip-path="url(#clip1_7_247)">
+<g clip-path="url(#clip2_7_247)">
+<rect width="120" height="120" fill="#FF8C1A"/>
+<g clip-path="url(#clip3_7_247)">
+<path d="M60 0L120 120H0L60 0Z" fill="#FDE068"/>
+</g>
+</g>
+<g clip-path="url(#clip4_7_247)">
+<rect width="120" height="120" transform="translate(120)" fill="#2EB10A"/>
+<circle cx="240" r="60" fill="#84FF5E"/>
+</g>
+<g clip-path="url(#clip5_7_247)">
+<rect width="120" height="120" transform="translate(240)" fill="#29D0D3"/>
+<circle cx="240" cy="60" r="60" fill="#18B2B5"/>
+</g>
+<rect width="120" height="120" transform="translate(360)" fill="#FDC803"/>
+<circle cx="420" cy="60" r="33.6" fill="#FDE088"/>
+<g clip-path="url(#clip6_7_247)">
+<rect width="120" height="120" transform="translate(480)" fill="#5300BB"/>
+<g clip-path="url(#clip7_7_247)">
+<path d="M480 0H600L540 120L480 0Z" fill="#A86BFF"/>
+</g>
+</g>
+<g clip-path="url(#clip8_7_247)">
+<rect width="120" height="120" transform="translate(600)" fill="#FF7270"/>
+<rect x="614.4" y="36" width="141.6" height="48" rx="24" fill="#E02929"/>
+</g>
+<g clip-path="url(#clip9_7_247)">
+<rect width="120" height="120" transform="translate(720)" fill="#007172"/>
+<circle cx="720" cy="120" r="60" fill="#29D0D3"/>
+</g>
+<g clip-path="url(#clip10_7_247)">
+<rect width="120" height="120" transform="translate(840)" fill="#FF55FF"/>
+<circle cx="900" cy="120" r="60" fill="#CF37DF"/>
+</g>
+<g clip-path="url(#clip11_7_247)">
+<rect width="120" height="120" transform="translate(960)" fill="#84FF5E"/>
+<g clip-path="url(#clip12_7_247)">
+<path d="M960 0L1080 60L960 120V0Z" fill="#2EB10A"/>
+</g>
+</g>
+<g clip-path="url(#clip13_7_247)">
+<rect width="120" height="120" transform="translate(1080)" fill="#F0B503"/>
+<circle cx="1080" r="60" fill="#FDC803"/>
+</g>
+<rect width="120" height="120" transform="translate(1200)" fill="#7323D8"/>
+<circle cx="1260" cy="60" r="30" fill="#A86BFF"/>
+<g clip-path="url(#clip14_7_247)">
+<rect width="120" height="120" transform="translate(1320)" fill="#FF3F3E"/>
+<circle cx="1380" r="60" fill="#FF7270"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_7_247">
+<rect width="1440" height="120" fill="white"/>
+</clipPath>
+<clipPath id="clip1_7_247">
+<rect width="1440" height="120" fill="white"/>
+</clipPath>
+<clipPath id="clip2_7_247">
+<rect width="120" height="120" fill="white"/>
+</clipPath>
+<clipPath id="clip3_7_247">
+<rect width="120" height="120" fill="white"/>
+</clipPath>
+<clipPath id="clip4_7_247">
+<rect width="120" height="120" fill="white" transform="translate(120)"/>
+</clipPath>
+<clipPath id="clip5_7_247">
+<rect width="120" height="120" fill="white" transform="translate(240)"/>
+</clipPath>
+<clipPath id="clip6_7_247">
+<rect width="120" height="120" fill="white" transform="translate(480)"/>
+</clipPath>
+<clipPath id="clip7_7_247">
+<rect width="120" height="120" fill="white" transform="translate(480)"/>
+</clipPath>
+<clipPath id="clip8_7_247">
+<rect width="120" height="120" fill="white" transform="translate(600)"/>
+</clipPath>
+<clipPath id="clip9_7_247">
+<rect width="120" height="120" fill="white" transform="translate(720)"/>
+</clipPath>
+<clipPath id="clip10_7_247">
+<rect width="120" height="120" fill="white" transform="translate(840)"/>
+</clipPath>
+<clipPath id="clip11_7_247">
+<rect width="120" height="120" fill="white" transform="translate(960)"/>
+</clipPath>
+<clipPath id="clip12_7_247">
+<rect width="120" height="120" fill="white" transform="translate(960)"/>
+</clipPath>
+<clipPath id="clip13_7_247">
+<rect width="120" height="120" fill="white" transform="translate(1080)"/>
+</clipPath>
+<clipPath id="clip14_7_247">
+<rect width="120" height="120" fill="white" transform="translate(1320)"/>
+</clipPath>
+</defs>
+</svg>
