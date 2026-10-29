@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="limite">
     <span class="tema">TEMA 2026</span>
     <h2 class="titulo-pluralidade">Vozes: pluralidade na Educação, Ciência e Tecnologia</h2>
     <p class="conteudo-pluralidade">Cada curso, cada laboratório e cada pessoa fala do seu jeito. Esta edição celebra as muitas formas de produzir, comunicar e compartilhar conhecimento.</p>
@@ -25,39 +25,50 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 5rem;
-    min-height: 40rem;
+    padding-block: var(--espaco-secao);
  }
-section h2 {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin: 0;
-}
 section h3{
-    font-size: 2.2rem;
+    font-size: clamp(1.5rem, 1.2rem + 0.8vw, 1.875rem);
+    font-weight: 800;
 }
  section span{
-    color: #6B5444;
+    color: var(--cor-texto-suave);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    margin-bottom: 0.75rem;
+ }
+ .conteudo-pluralidade{
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 1rem 0 2.5rem;
  }
  section > div {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 4rem;
+    gap: 1.25rem;
 }
  section > div > div{
-        min-height: 12rem;
-    padding: 5.5rem 1.25rem 1.25rem;
+    padding: 1.5rem 2rem;
     border-radius: 0.2rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    height:20rem ;
+    min-height: 19rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     & h3{
         margin: 0;
+    }
+    & p{
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 0.5rem 0 0;
+        opacity: 0.85;
     }
  }
  section .educacao{
@@ -71,5 +82,15 @@ section h3{
  .tecnologia{
     background-color: #a45ff2;
     background-image: url('@/assets/Tecnologia.svg');
+ }
+
+ @media (max-width: 900px) {
+    section > div {
+        grid-template-columns: 1fr;
+    }
+    section > div > div{
+        min-height: 15rem;
+        padding: 1.5rem;
+    }
  }
 </style>
