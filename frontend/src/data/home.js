@@ -9,6 +9,8 @@ import logoFuncern from '@/assets/logos/funcern.png'
 import logoCern from '@/assets/logos/cern.png'
 import logoAeb from '@/assets/logos/aeb.png'
 import logoMcti from '@/assets/logos/mcti.png'
+import logoLivraria from '@/assets/logos/livraria-2048x1024.png'
+import logoMcm from '@/assets/logos/mcm-2048x1024.png'
 import logoIfrn from '@/assets/logos/ifrn.png'
 import logoDpeq from '@/assets/logos/dpeq.png'
 import logoDirex from '@/assets/logos/direx.png'
@@ -35,6 +37,8 @@ export const parceiros = [
   { nome: 'CERN', logo: logoCern },
   { nome: 'AEB – Agência Espacial Brasileira', logo: logoAeb },
   { nome: 'Ministério da Ciência, Tecnologia e Inovação', logo: logoMcti },
+  { nome: 'Livraria Cooperativa Cultural', logo: logoLivraria },
+  { nome: 'MCM – Museu de Ciências Morfológicas', logo: logoMcm },
 ]
 
 export const realizacao = [
