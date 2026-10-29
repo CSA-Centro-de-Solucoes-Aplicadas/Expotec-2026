@@ -46,4 +46,6 @@ export const realizacao = [
 export const contato = {
   instagram: 'expotec.cnat',
   email: 'expotec.cnat@ifrn.edu.br',
+  telefone: '(84) 4005-9998',
+  endereco: ['Av. Senador Salgado Filho, 1559, Tirol', 'Natal, RN · CEP 59015-000'],
 }

@@ -34,6 +34,12 @@ defineProps({
     border-radius: 0.4375rem 0.4375rem 0 0;
 }
 
+.icone-pilula {
+    width: 1.375rem;
+    height: 0.625rem;
+    border-radius: 999px;
+}
+
 .icone-triangulo {
     clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }

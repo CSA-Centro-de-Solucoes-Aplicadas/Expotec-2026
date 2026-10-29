@@ -5,7 +5,10 @@
         <nav class="nav-principal" aria-label="Navegação principal">
             <ul>
                 <li v-for="item in itensMenu" :key="item.rotulo">
-                    <component :is="item.destino ? 'a' : 'span'" :href="item.destino">{{ item.rotulo }}</component>
+                    <router-link v-if="item.destino" v-slot="{ href, navigate }" :to="item.destino" custom>
+                        <a :href="href" :aria-current="ativo(item) ? 'page' : undefined" @click="navigate">{{ item.rotulo }}</a>
+                    </router-link>
+                    <span v-else>{{ item.rotulo }}</span>
                 </li>
             </ul>
         </nav>
@@ -37,13 +40,14 @@
             <nav aria-label="Navegação principal">
                 <ul>
                     <li v-for="item in itensMenu" :key="item.rotulo">
-                        <component
-                            :is="item.destino ? 'a' : 'span'"
-                            :href="item.destino"
-                            @click="item.destino && fecharMenu()"
-                        >
-                            {{ item.rotulo }}
-                        </component>
+                        <router-link v-if="item.destino" v-slot="{ href, navigate }" :to="item.destino" custom>
+                            <a
+                                :href="href"
+                                :aria-current="ativo(item) ? 'page' : undefined"
+                                @click="navigate($event); fecharMenu()"
+                            >{{ item.rotulo }}</a>
+                        </router-link>
+                        <span v-else>{{ item.rotulo }}</span>
                     </li>
                 </ul>
             </nav>
@@ -76,11 +80,25 @@
         list-style-type: none;
         justify-content: space-between;
         align-items: center;
-        gap: 1.5rem;
+        gap: 0.375rem;
         margin: 0;
         padding: 0;
         font-size: 0.875rem;
         white-space: nowrap;
+        & li > *{
+            display: block;
+            padding: 0.75rem 0.875rem;
+            border-radius: 999px;
+        }
+    }
+
+    /* Página atual: pílula amarela. Restrito ao menu, pois o router-link do logo também recebe aria-current na Home */
+    nav li > [aria-current='page']{
+        background-color: var(--cor-amarelo);
+        font-weight: 700;
+        &:hover{
+            text-decoration: none;
+        }
     }
 
     a{
@@ -175,6 +193,12 @@
             font-size: 1.125rem;
             font-weight: 700;
         }
+        /* Pílula com recuo negativo para o texto continuar alinhado aos demais itens */
+        & li > [aria-current='page']{
+            margin-inline: -0.875rem;
+            padding-inline: 0.875rem;
+            border-radius: 999px;
+        }
     }
     .botao-fechar{
         align-self: flex-end;
@@ -202,16 +226,21 @@
 </style>
 <script setup>
     import { onBeforeUnmount, onMounted, ref } from 'vue'
+    import { useRoute } from 'vue-router'
     import expotec from '@/assets/expotec-extenso.svg'
 
     // Itens sem `destino` ainda não têm página; ganham link quando as rotas existirem
     const itensMenu = [
-        { rotulo: 'Sobre', destino: '/#sobre' },
+        { rotulo: 'Sobre', destino: '/sobre' },
         { rotulo: 'Organização' },
-        { rotulo: 'Trabalhos científicos' },
-        { rotulo: 'Documentos' },
-        { rotulo: 'Contato', destino: '/#contato' },
+        { rotulo: 'Trabalhos científicos', destino: '/trabalhos-cientificos' },
+        { rotulo: 'Documentos', destino: '/documentos' },
+        { rotulo: 'Contato', destino: '/contato' },
     ]
+
+    // Compara só o caminho: âncoras como /#sobre não marcam a Home como página atual
+    const rota = useRoute()
+    const ativo = (item) => rota.path === item.destino
 
     const menu = ref(null)
     const menuAberto = ref(false)
