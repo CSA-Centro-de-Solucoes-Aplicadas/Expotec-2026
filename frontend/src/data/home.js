@@ -1,6 +1,7 @@
 // Conteúdo provisório da Home (edições passadas, apoio e parceiros).
 // As imagens em assets/edicoes e assets/logos foram recortadas do protótipo:
 // substitua pelos arquivos originais quando estiverem disponíveis.
+import contatoJson from '@/content/contato.json'
 import fotoOficina from '@/assets/edicoes/2021-oficina.jpg'
 import fotoRobotica from '@/assets/homesobreexp.png'
 import fotoDanca from '@/assets/edicoes/2021-danca.jpg'
@@ -47,9 +48,4 @@ export const realizacao = [
   { nome: 'DIREX – Diretoria de Extensão', logo: logoDirex },
 ]
 
-export const contato = {
-  instagram: 'expotec.cnat',
-  email: 'expotec.cnat@ifrn.edu.br',
-  telefone: '(84) 4005-9998',
-  endereco: ['Av. Senador Salgado Filho, 1559, Tirol', 'Natal, RN · CEP 59015-000'],
-}
+export const contato = contatoJson

@@ -1,6 +1,8 @@
 // Dados provisórios da programação. Para integrar com a API, basta substituir
 // estes arrays por dados no mesmo formato.
 
+import conteudo from '@/content/atividades.json'
+
 export const linkSuap = 'https://suap.ifrn.edu.br'
 
 export const categorias = [
@@ -19,50 +21,4 @@ export const dias = [
   { id: 'sexta', nome: 'Sexta', data: '[dd/mm]', cor: '#a86bff', forma: 'circulo', corForma: '#7323d8' },
 ]
 
-export const atividades = [
-  {
-    id: 1,
-    dia: 'quarta',
-    inicio: '08h00',
-    fim: '09h00',
-    titulo: 'Minerais críticos da transição energética',
-    local: 'Mini Auditório · DIAREN',
-    categoria: 'palestra',
-  },
-  {
-    id: 2,
-    dia: 'quarta',
-    inicio: '08h00',
-    fim: '12h00',
-    titulo: 'Plano de gerenciamento de resíduos da construção civil',
-    local: 'Sala 05 · DIACON',
-    categoria: 'minicurso',
-  },
-  {
-    id: 3,
-    dia: 'quarta',
-    inicio: '08h00',
-    fim: '12h00',
-    titulo: 'Física experimental do PIBID',
-    local: 'Laboratórios de Física',
-    categoria: 'exposicao',
-  },
-  {
-    id: 4,
-    dia: 'quarta',
-    inicio: '08h00',
-    fim: '12h00',
-    titulo: 'Grupo Minerar: tendências tecnológicas na mineração',
-    local: 'DIAREN',
-    categoria: 'exposicao',
-  },
-  {
-    id: 5,
-    dia: 'quarta',
-    inicio: '08h00',
-    fim: '18h00',
-    titulo: 'Estande temático: projetos do NEPPSA',
-    local: 'Rosquinhas',
-    categoria: 'exposicao',
-  },
-]
+export const atividades = conteudo.atividades

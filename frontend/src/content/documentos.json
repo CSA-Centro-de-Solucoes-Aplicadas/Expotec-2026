@@ -1,0 +1,68 @@
+{
+  "avisos": [
+    {
+      "data": "[dd/mm]",
+      "titulo": "Submissão de trabalhos para a mostra científica"
+    },
+    {
+      "data": "[dd/mm]",
+      "titulo": "Inscrições em minicursos e oficinas pelo SUAP"
+    },
+    {
+      "data": "[dd/mm]",
+      "titulo": "Orientações para montagem dos estandes"
+    }
+  ],
+  "recursos": [
+    {
+      "titulo": "Certificados",
+      "texto": "Emita o certificado de participação, apresentação ou organização.",
+      "cor": "#fdc803",
+      "forma": "circulo",
+      "corForma": "#f0b503"
+    },
+    {
+      "titulo": "Manual do participante",
+      "texto": "Como se inscrever, onde ficam os espaços e o que levar.",
+      "cor": "#29d0d3",
+      "forma": "circulo",
+      "corForma": "#18b2b5"
+    },
+    {
+      "titulo": "Manual do expositor",
+      "texto": "Montagem do estande, horários e regras de apresentação.",
+      "cor": "#ff7270",
+      "forma": "pilula",
+      "corForma": "#ff3f3e"
+    },
+    {
+      "titulo": "Modelos de trabalho",
+      "texto": "Modelos de resumo, artigo e pôster para a mostra científica.",
+      "cor": "#84ff5e",
+      "forma": "triangulo",
+      "corForma": "#66e540"
+    }
+  ],
+  "arquivos": [
+    {
+      "tipo": "PDF",
+      "titulo": "Regulamento da Expotec 2026"
+    },
+    {
+      "tipo": "PDF",
+      "titulo": "Edital da mostra científica"
+    },
+    {
+      "tipo": "DOCX",
+      "titulo": "Modelo de resumo expandido"
+    },
+    {
+      "tipo": "PPTX",
+      "titulo": "Template oficial de apresentação"
+    },
+    {
+      "tipo": "PPTX",
+      "titulo": "Modelo de pôster"
+    }
+  ]
+}

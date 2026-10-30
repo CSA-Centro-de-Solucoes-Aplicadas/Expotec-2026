@@ -1,0 +1,153 @@
+backend:
+  name: github
+  repo: CSA-Centro-de-Solucoes-Aplicadas/Expotec-2026
+  branch: main
+  auth_scope: repo # repositório privado
+  # base_url: https://SEU-OAUTH-PROXY  # descomente ao usar proxy próprio (Cloudflare Worker etc.)
+
+local_backend: true # só para desenvolvimento; remova em produção
+
+locale: pt
+media_folder: frontend/public/uploads
+public_folder: /uploads
+
+collections:
+  # ───────── Programação ─────────
+  - name: programacao
+    label: Programação
+    files:
+      - name: atividades
+        label: Atividades
+        file: frontend/src/content/atividades.json
+        fields:
+          - label: Atividades
+            name: atividades
+            widget: list
+            label_singular: Atividade
+            summary: "{{fields.dia}} · {{fields.inicio}} · {{fields.titulo}}"
+            fields:
+              - { label: ID, name: id, widget: number, value_type: int, hint: "Número único, que não se repita em outra atividade" }
+              - label: Dia
+                name: dia
+                widget: select
+                options:
+                  - { label: Quarta, value: quarta }
+                  - { label: Quinta, value: quinta }
+                  - { label: Sexta, value: sexta }
+              - { label: Início, name: inicio, widget: string, hint: "Ex.: 08h00" }
+              - { label: Fim, name: fim, widget: string, hint: "Ex.: 12h00" }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Local, name: local, widget: string }
+              - label: Categoria
+                name: categoria
+                widget: select
+                options:
+                  - { label: Palestra, value: palestra }
+                  - { label: Oficina, value: oficina }
+                  - { label: Minicurso, value: minicurso }
+                  - { label: Exposição, value: exposicao }
+                  - { label: Cultural, value: cultural }
+
+  # ───────── Página Documentos ─────────
+  - name: documentos
+    label: Página Documentos
+    files:
+      - name: documentos
+        label: Avisos, recursos e arquivos
+        file: frontend/src/content/documentos.json
+        fields:
+          - label: Avisos
+            name: avisos
+            widget: list
+            label_singular: Aviso
+            summary: "{{fields.data}} · {{fields.titulo}}"
+            fields:
+              - { label: Data, name: data, widget: string, hint: "Ex.: 15/11" }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Link, name: href, widget: string, required: false }
+          - label: Recursos (cartões coloridos)
+            name: recursos
+            widget: list
+            label_singular: Recurso
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: texto, widget: text }
+              - { label: Link, name: href, widget: string, required: false }
+              - { label: Cor do cartão, name: cor, widget: color }
+              - label: Forma decorativa
+                name: forma
+                widget: select
+                options: [circulo, pilula, quadrado, semicirculo, triangulo]
+              - { label: Cor da forma, name: corForma, widget: color }
+          - label: Arquivos para download
+            name: arquivos
+            widget: list
+            label_singular: Arquivo
+            summary: "{{fields.tipo}} · {{fields.titulo}}"
+            fields:
+              - label: Tipo
+                name: tipo
+                widget: select
+                options: [PDF, DOCX, PPTX, XLSX, ZIP]
+              - { label: Título, name: titulo, widget: string }
+              - { label: Link, name: href, widget: string, required: false }
+
+  # ───────── Trabalhos científicos ─────────
+  - name: trabalhos
+    label: Trabalhos científicos
+    files:
+      - name: trabalhos
+        label: Diretrizes e documentos
+        file: frontend/src/content/trabalhos.json
+        fields:
+          - label: Diretrizes
+            name: diretrizes
+            widget: list
+            label_singular: Diretriz
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - label: Forma decorativa
+                name: forma
+                widget: select
+                options: [circulo, pilula, quadrado, semicirculo, triangulo]
+              - { label: Cor, name: cor, widget: color }
+              - label: Itens
+                name: itens
+                widget: list
+                label_singular: Item
+                fields:
+                  - { label: Texto, name: texto, widget: text }
+                  - label: Link no meio do texto (opcional)
+                    name: link
+                    widget: object
+                    required: false
+                    fields:
+                      - { label: Trecho clicável, name: rotulo, widget: string, required: false }
+                      - { label: Endereço, name: href, widget: string, required: false }
+                  - { label: Texto após o link, name: complemento, widget: text, required: false }
+          - label: Documentos
+            name: documentos
+            widget: list
+            label_singular: Documento
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Link, name: href, widget: string, required: false }
+
+  # ───────── Configurações do site ─────────
+  - name: site
+    label: Site
+    files:
+      - name: contato
+        label: Contato
+        file: frontend/src/content/contato.json
+        fields:
+          - { label: Instagram (sem @), name: instagram, widget: string }
+          - { label: E-mail, name: email, widget: string }
+          - { label: Telefone, name: telefone, widget: string }
+          - label: Endereço (uma linha por item)
+            name: endereco
+            widget: list
+            field: { label: Linha, name: linha, widget: string }
