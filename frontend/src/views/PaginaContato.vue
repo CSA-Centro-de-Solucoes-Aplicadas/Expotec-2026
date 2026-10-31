@@ -29,7 +29,7 @@
 <script setup>
 import CabecalhoPagina from '@/components/base/CabecalhoPagina.vue'
 import IconeCategoria from '@/components/base/IconeCategoria.vue'
-import mascote from '@/assets/mascote/Group 4984.png'
+import mascote from '@/assets/mascote/mascote.png'
 import { contato } from '@/data/home'
 
 const canais = [

@@ -24,7 +24,7 @@ import { contato, realizacao } from '@/data/home'
         </div>
         <div class="creditos">
             <p class="limite">
-                Desenvolvido pelo <a href="https://https://csa.cnat.ifrn.edu.br/" target="_blank" rel="noopener">Centro de Soluções Aplicadas</a>
+                Desenvolvido pelo <a href="https://csa.cnat.ifrn.edu.br/" target="_blank" rel="noopener">Centro de Soluções Aplicadas</a>
             </p>
         </div>
     </footer>

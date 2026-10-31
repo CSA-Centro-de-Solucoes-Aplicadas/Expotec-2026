@@ -47,6 +47,7 @@ collections:
                   - { label: Minicurso, value: minicurso }
                   - { label: Exposição, value: exposicao }
                   - { label: Cultural, value: cultural }
+              - { label: Link de inscrição, name: inscricao, widget: string, required: false, hint: "Link do SUAP para esta atividade. Sem link, o botão Inscrever-se não aparece" }
 
   # ───────── Página Documentos ─────────
   - name: documentos
@@ -64,7 +65,7 @@ collections:
             fields:
               - { label: Data, name: data, widget: string, hint: "Ex.: 15/11" }
               - { label: Título, name: titulo, widget: string }
-              - { label: Link, name: href, widget: string, required: false }
+              - { label: Link ou arquivo, name: href, widget: file, required: false, hint: "Sem link, o aviso aparece sem o botão Ler aviso" }
           - label: Recursos (cartões coloridos)
             name: recursos
             widget: list
@@ -73,7 +74,7 @@ collections:
             fields:
               - { label: Título, name: titulo, widget: string }
               - { label: Texto, name: texto, widget: text }
-              - { label: Link, name: href, widget: string, required: false }
+              - { label: Link ou arquivo, name: href, widget: file, required: false, hint: "Sem link, o cartão mostra Em breve" }
               - { label: Cor do cartão, name: cor, widget: color }
               - label: Forma decorativa
                 name: forma
@@ -91,7 +92,8 @@ collections:
                 widget: select
                 options: [PDF, DOCX, PPTX, XLSX, ZIP]
               - { label: Título, name: titulo, widget: string }
-              - { label: Link, name: href, widget: string, required: false }
+              # Upload vai para frontend/public/uploads; o widget também aceita colar um link externo
+              - { label: Arquivo, name: href, widget: file, hint: "Envie o arquivo ou cole o link de onde ele está hospedado" }
 
   # ───────── Trabalhos científicos ─────────
   - name: trabalhos
@@ -125,7 +127,7 @@ collections:
                     required: false
                     fields:
                       - { label: Trecho clicável, name: rotulo, widget: string, required: false }
-                      - { label: Endereço, name: href, widget: string, required: false }
+                      - { label: Endereço ou arquivo, name: href, widget: file, required: false }
                   - { label: Texto após o link, name: complemento, widget: text, required: false }
           - label: Documentos
             name: documentos
@@ -134,7 +136,36 @@ collections:
             summary: "{{fields.titulo}}"
             fields:
               - { label: Título, name: titulo, widget: string }
-              - { label: Link, name: href, widget: string, required: false }
+              - { label: Link ou arquivo, name: href, widget: file, required: false, hint: "Sem link, o documento não aparece no site" }
+
+  # ───────── Organização ─────────
+  - name: organizacao
+    label: Organização
+    files:
+      - name: organizacao
+        label: Comissão geral
+        file: frontend/src/content/organizacao.json
+        fields:
+          - label: Setores
+            name: setores
+            widget: list
+            label_singular: Setor
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: Nome do setor, name: nome, widget: string, hint: "Ex.: Diretoria de Extensão" }
+              - label: Forma decorativa
+                name: forma
+                widget: select
+                options: [circulo, quadrado, semicirculo, triangulo]
+              - { label: Cor, name: cor, widget: color }
+              - label: Membros
+                name: membros
+                widget: list
+                label_singular: Membro
+                summary: "{{fields.nome}}"
+                fields:
+                  - { label: Nome, name: nome, widget: string }
+                  - { label: Função (opcional), name: funcao, widget: string, required: false, hint: "Ex.: Coordenadora" }
 
   # ───────── Configurações do site ─────────
   - name: site

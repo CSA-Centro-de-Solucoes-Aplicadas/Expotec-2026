@@ -5,10 +5,9 @@
         <nav class="nav-principal" aria-label="Navegação principal">
             <ul>
                 <li v-for="item in itensMenu" :key="item.rotulo">
-                    <router-link v-if="item.destino" v-slot="{ href, navigate }" :to="item.destino" custom>
+                    <router-link v-slot="{ href, navigate }" :to="item.destino" custom>
                         <a :href="href" :aria-current="ativo(item) ? 'page' : undefined" @click="navigate">{{ item.rotulo }}</a>
                     </router-link>
-                    <span v-else>{{ item.rotulo }}</span>
                 </li>
             </ul>
         </nav>
@@ -40,14 +39,13 @@
             <nav aria-label="Navegação principal">
                 <ul>
                     <li v-for="item in itensMenu" :key="item.rotulo">
-                        <router-link v-if="item.destino" v-slot="{ href, navigate }" :to="item.destino" custom>
+                        <router-link v-slot="{ href, navigate }" :to="item.destino" custom>
                             <a
                                 :href="href"
                                 :aria-current="ativo(item) ? 'page' : undefined"
                                 @click="navigate($event); fecharMenu()"
                             >{{ item.rotulo }}</a>
                         </router-link>
-                        <span v-else>{{ item.rotulo }}</span>
                     </li>
                 </ul>
             </nav>
@@ -229,10 +227,9 @@
     import { useRoute } from 'vue-router'
     import expotec from '@/assets/expotec-extenso.svg'
 
-    // Itens sem `destino` ainda não têm página; ganham link quando as rotas existirem
     const itensMenu = [
         { rotulo: 'Sobre', destino: '/sobre' },
-        { rotulo: 'Organização' },
+        { rotulo: 'Organização', destino: '/organizacao' },
         { rotulo: 'Trabalhos científicos', destino: '/trabalhos-cientificos' },
         { rotulo: 'Documentos', destino: '/documentos' },
         { rotulo: 'Contato', destino: '/contato' },

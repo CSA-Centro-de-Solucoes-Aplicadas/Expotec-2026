@@ -1,18 +1,5 @@
 {
-  "avisos": [
-    {
-      "data": "[dd/mm]",
-      "titulo": "Submissão de trabalhos para a mostra científica"
-    },
-    {
-      "data": "[dd/mm]",
-      "titulo": "Inscrições em minicursos e oficinas pelo SUAP"
-    },
-    {
-      "data": "[dd/mm]",
-      "titulo": "Orientações para montagem dos estandes"
-    }
-  ],
+  "avisos": [],
   "recursos": [
     {
       "titulo": "Certificados",
@@ -43,26 +30,5 @@
       "corForma": "#66e540"
     }
   ],
-  "arquivos": [
-    {
-      "tipo": "PDF",
-      "titulo": "Regulamento da Expotec 2026"
-    },
-    {
-      "tipo": "PDF",
-      "titulo": "Edital da mostra científica"
-    },
-    {
-      "tipo": "DOCX",
-      "titulo": "Modelo de resumo expandido"
-    },
-    {
-      "tipo": "PPTX",
-      "titulo": "Template oficial de apresentação"
-    },
-    {
-      "tipo": "PPTX",
-      "titulo": "Modelo de pôster"
-    }
-  ]
+  "arquivos": []
 }

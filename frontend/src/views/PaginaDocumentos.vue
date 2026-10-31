@@ -7,13 +7,14 @@
     <div class="limite">
         <section class="secao" aria-labelledby="titulo-avisos">
             <TituloSecao id="titulo-avisos" forma="circulo" cor="#ff8c1a">Avisos</TituloSecao>
-            <ul class="avisos">
+            <ul v-if="avisos.length" class="avisos">
                 <li v-for="aviso in avisos" :key="aviso.titulo">
                     <span class="data">{{ aviso.data }}</span>
                     <span class="titulo-aviso">{{ aviso.titulo }}</span>
-                    <a :href="aviso.href" class="link-acao">Ler aviso<span class="visualmente-oculto">: {{ aviso.titulo }}</span></a>
+                    <a v-if="aviso.href" :href="aviso.href" class="link-acao">Ler aviso<span class="visualmente-oculto">: {{ aviso.titulo }}</span></a>
                 </li>
             </ul>
+            <p v-else class="sem-conteudo" role="status">Os avisos serão publicados em breve.</p>
         </section>
 
         <section class="secao" aria-labelledby="titulo-recursos">
@@ -28,7 +29,8 @@
                     ></span>
                     <h3>{{ recurso.titulo }}</h3>
                     <p>{{ recurso.texto }}</p>
-                    <a :href="recurso.href" class="link-acao">Acessar<span class="visualmente-oculto"> {{ recurso.titulo }}</span></a>
+                    <a v-if="recurso.href" :href="recurso.href" class="link-acao">Acessar<span class="visualmente-oculto"> {{ recurso.titulo }}</span></a>
+                    <span v-else class="em-breve">Em breve</span>
                 </li>
             </ul>
         </section>
@@ -37,7 +39,7 @@
     <section class="arquivos" aria-labelledby="titulo-arquivos">
         <div class="limite">
             <TituloSecao id="titulo-arquivos" forma="semicirculo" cor="#29d0d3">Arquivos para baixar</TituloSecao>
-            <ul>
+            <ul v-if="arquivos.length">
                 <li v-for="arquivo in arquivos" :key="arquivo.titulo">
                     <span class="tipo">{{ arquivo.tipo }}</span>
                     <span class="titulo-arquivo">{{ arquivo.titulo }}</span>
@@ -48,6 +50,7 @@
                     >Baixar<span class="visualmente-oculto"> {{ arquivo.titulo }} ({{ arquivo.tipo }})</span></a>
                 </li>
             </ul>
+            <p v-else class="sem-conteudo" role="status">Os arquivos serão publicados em breve.</p>
         </div>
     </section>
 </template>
@@ -100,6 +103,13 @@ ul {
     border-bottom: 1px solid var(--cor-borda-clara);
 }
 
+/* Mesmo estilo da mensagem de edições sem fotos, na Home */
+.sem-conteudo {
+    margin: 2rem 0 0;
+    color: var(--cor-texto-suave);
+    font-weight: 500;
+}
+
 .data {
     color: var(--cor-texto-suave);
     font-size: 0.875rem;
@@ -143,10 +153,15 @@ ul {
     line-height: 1.6;
 }
 
-.recurso .link-acao {
+.recurso .link-acao,
+.recurso .em-breve {
     margin-top: auto;
     align-self: flex-start;
     font-size: 0.9375rem;
+}
+
+.recurso .em-breve {
+    font-weight: 800;
 }
 
 /* Forma decorativa no canto inferior direito, atrás do texto */

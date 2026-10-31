@@ -47,7 +47,7 @@ import CabecalhoPagina from '@/components/base/CabecalhoPagina.vue'
 import ListraFormas from '@/components/base/ListraFormas.vue'
 import TituloSecao from '@/components/base/TituloSecao.vue'
 import CartoesPluralidade from '@/components/modules/CartoesPluralidade.vue'
-import mascote from '@/assets/mascote/Group 4984.png'
+import mascote from '@/assets/mascote/mascote.png'
 </script>
 <style scoped>
 /* A listra de formas logo abaixo já separa o cabeçalho, então a borda sai */

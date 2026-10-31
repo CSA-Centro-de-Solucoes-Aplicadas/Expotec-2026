@@ -1,19 +1,19 @@
 <template>
-    <Hero/>
+    <HeroInicio/>
     <ListraFormas/>
     <SobreExpotec/>
     <hr class="divisor">
-    <Pluralidade/>
+    <TemaPluralidade/>
     <ProgramacaoEvento/>
     <EdicoesPassadas/>
     <hr class="divisor">
     <ApoioParceiros/>
 </template>
 <script setup>
-    import Hero from '@/components/modules/Hero.vue';
+    import HeroInicio from '@/components/modules/HeroInicio.vue';
     import ListraFormas from '@/components/base/ListraFormas.vue';
     import SobreExpotec from '@/components/modules/SobreExpotec.vue';
-    import Pluralidade from '@/components/modules/Pluralidade.vue';
+    import TemaPluralidade from '@/components/modules/TemaPluralidade.vue';
     import ProgramacaoEvento from '@/components/modules/ProgramacaoEvento.vue';
     import EdicoesPassadas from '@/components/modules/EdicoesPassadas.vue';
     import ApoioParceiros from '@/components/modules/ApoioParceiros.vue';

@@ -10,5 +10,5 @@ export const diretrizes = conteudo.diretrizes.map((diretriz) => ({
   })),
 }))
 
-// Campo de link deixado em branco no painel vira `undefined`, como era antes
-export const documentos = conteudo.documentos.map((doc) => ({ ...doc, href: doc.href || undefined }))
+// Documento sem arquivo no painel ainda não foi publicado: fica fora da página até ganhar um link
+export const documentos = conteudo.documentos.filter((doc) => doc.href)

@@ -28,11 +28,12 @@
     <section id="documentos" class="documentos" aria-labelledby="titulo-documentos">
         <div class="limite">
             <h2 id="titulo-documentos">Documentos da mostra</h2>
-            <ul>
+            <ul v-if="documentos.length">
                 <li v-for="documento in documentos" :key="documento.titulo">
                     <BaseButton variant="secondary" :href="documento.href">{{ documento.titulo }}</BaseButton>
                 </li>
             </ul>
+            <p v-else class="sem-conteudo" role="status">Os documentos serão publicados em breve.</p>
         </div>
     </section>
 </template>
@@ -111,6 +112,12 @@ ol a:focus-visible {
     margin: 1.5rem 0 0;
     padding: 0;
     list-style: none;
+}
+
+.sem-conteudo {
+    margin: 1.5rem 0 0;
+    color: var(--cor-texto-suave);
+    font-weight: 500;
 }
 
 .documentos .botao {

@@ -1,14 +1,12 @@
 <script setup>
-import Header from './components/layout/header.vue';
+import CabecalhoSite from './components/layout/CabecalhoSite.vue';
 import RodapeSite from './components/layout/RodapeSite.vue';
 </script>
 
 <template>
-  <Header/>
-  <main class="content">
+  <CabecalhoSite/>
+  <main>
     <router-view />
   </main>
   <RodapeSite/>
 </template>
-
-<style scoped></style>

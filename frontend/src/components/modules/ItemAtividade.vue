@@ -10,10 +10,6 @@ defineProps({
     categoria: {
         type: Object,
         required: true
-    },
-    linkInscricao: {
-        type: String,
-        required: true
     }
 })
 </script>
@@ -28,12 +24,14 @@ defineProps({
             <IconeCategoria :forma="categoria.forma" :cor="categoria.cor" />
             {{ categoria.nome }}
         </p>
+        <!-- Sem link de inscrição no CMS (ex.: exposições abertas), o botão não aparece -->
         <BaseButton
+            v-if="atividade.inscricao"
             variant="secondary"
-            :href="linkInscricao"
+            :href="atividade.inscricao"
             target="_blank"
             rel="noopener"
-            :aria-label="`Inscrever-se em ${atividade.titulo} (abre o SUAP em nova aba)`"
+            :aria-label="`Inscrever-se em ${atividade.titulo} (abre em nova aba)`"
         >
             Inscrever-se
         </BaseButton>

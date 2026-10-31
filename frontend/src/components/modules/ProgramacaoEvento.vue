@@ -1,9 +1,8 @@
 <script setup>
 import { computed, ref } from 'vue'
-import BaseButton from '../base/BaseButton.vue'
 import IconeCategoria from '../base/IconeCategoria.vue'
 import ItemAtividade from './ItemAtividade.vue'
-import { atividades, categorias, dias, linkSuap } from '@/data/programacao'
+import { atividades, categorias, dias } from '@/data/programacao'
 
 const diaSelecionado = ref(dias[0].id)
 const categoriaSelecionada = ref('todas')
@@ -22,11 +21,8 @@ const atividadesFiltradas = computed(() =>
     <section id="programacao" aria-labelledby="titulo-programacao">
         <div class="limite">
             <div class="cabecalho">
-                <div>
-                    <h2 id="titulo-programacao">Programação</h2>
-                    <p>Escolha o dia e o tipo de atividade. As inscrições são feitas pelo SUAP.</p>
-                </div>
-                <BaseButton variant="secondary">Programação completa</BaseButton>
+                <h2 id="titulo-programacao">Programação</h2>
+                <p>Escolha o dia e o tipo de atividade. As inscrições são feitas pelo SUAP.</p>
             </div>
 
             <div class="dias" role="group" aria-label="Dia do evento">
@@ -77,11 +73,10 @@ const atividadesFiltradas = computed(() =>
                     :key="atividade.id"
                     :atividade="atividade"
                     :categoria="categoriasPorId[atividade.categoria]"
-                    :link-inscricao="linkSuap"
                 />
             </ul>
             <p v-else class="sem-atividades" role="status">
-                Nenhuma atividade encontrada para este dia e tipo.
+                {{ atividades.length ? 'Nenhuma atividade encontrada para este dia e tipo.' : 'A programação será publicada em breve.' }}
             </p>
         </div>
     </section>
@@ -96,10 +91,6 @@ section {
 }
 
 .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 1rem 2rem;
     margin-bottom: 2rem;
 }
 
@@ -109,9 +100,6 @@ section {
     font-weight: 400;
 }
 
-.cabecalho .botao {
-    flex-shrink: 0;
-}
 
 button {
     font-family: inherit;
@@ -154,7 +142,9 @@ button:focus-visible {
 }
 
 .dia-data {
-    font-size: 0.875rem;
+    margin-top: 0.125rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .dia .icone {
@@ -224,11 +214,6 @@ button:focus-visible {
 }
 
 @media (max-width: 600px) {
-    .cabecalho {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .dias {
         gap: 0.5rem;
     }
@@ -242,7 +227,7 @@ button:focus-visible {
     }
 
     .dia-data {
-        font-size: 0.6875rem;
+        font-size: 0.8125rem;
     }
 
     .dia .icone {
