@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-marrom: #382310;
+    --cor-marrom-escuro: #33200f;
+    --cor-texto-suave: #6b5444;
+    --cor-fundo: #fafafa;
+    --cor-creme: #fff3e0;
+    --cor-borda-clara: #eeddc5;
+    --cor-amarelo: #fdc803;
+
+    --largura-maxima: 81.25rem; /* 1300px */
+    --margem: 5rem;
+    --espaco-secao: 6rem;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --margem: 2.5rem;
+        --espaco-secao: 4.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --margem: 1.5rem;
+        --espaco-secao: 3.5rem;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-marrom);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: clip;
+}
+img{
+    max-width: 100%;
+}
+h2{
+    font-size: clamp(1.75rem, 1.2rem + 1.6vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Limita o conteúdo à largura máxima e o centraliza; --margem garante o respiro lateral em telas menores.
+   Seções com fundo de largura total aplicam esta classe a um wrapper interno. */
+.limite{
+    width: 100%;
+    max-width: calc(var(--largura-maxima) + 2 * var(--margem));
+    margin-inline: auto;
+    padding-inline: var(--margem);
+}
+
+/* Linha que separa as seções da Home, alinhada ao conteúdo */
+.divisor{
+    width: calc(100% - 2 * var(--margem));
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    border: 0;
+    border-top: 2px solid var(--cor-marrom);
+}
+
+.visualmente-oculto{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* Cartão de logo (apoio e parceiros): proporção fixa e contain para nunca distorcer ou cortar o logo */
+.cartao-logo{
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    border: 1px solid var(--cor-borda-clara);
+    border-radius: 0.75rem;
+    background-color: #f7f7f7;
+}
+.cartao-logo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

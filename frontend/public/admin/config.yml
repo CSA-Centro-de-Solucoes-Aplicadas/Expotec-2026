@@ -1,0 +1,261 @@
+backend:
+  name: github
+  repo: CSA-Centro-de-Solucoes-Aplicadas/Expotec-2026
+  branch: main
+  auth_scope: repo # repositório privado
+  # LOGIN: o painel usa o login do GitHub. Só quem tem acesso de escrita ao repositório consegue entrar.
+  # Fora do Netlify, é preciso um proxy OAuth (ex.: Cloudflare Worker). Veja docs/LOGIN-ADMIN.md,
+  # descomente a linha abaixo e troque pela URL do seu proxy:
+  # base_url: https://SEU-PROXY-OAUTH.workers.dev
+
+# Só funciona em localhost (npx decap-server): lá o painel abre sem login e grava direto nos arquivos.
+# Em produção o Decap ignora esta opção.
+local_backend: true
+
+locale: pt
+media_folder: frontend/public/uploads
+public_folder: /uploads
+logo_url: /favicon.png
+
+collections:
+  # ───────── Página inicial e imagens ─────────
+  - name: home
+    label: Página inicial e imagens
+    files:
+      - name: home
+        label: Home, logos e fotos
+        file: frontend/src/content/home.json
+        fields:
+          - label: Identidade do site
+            name: site
+            widget: object
+            fields:
+              - { label: Logotipo (SVG ou PNG), name: logo, widget: image, media_folder: "frontend/public/uploads", public_folder: "/uploads", hint: "Aparece no cabeçalho, no rodapé e na Home" }
+              - { label: Mascote, name: mascote, widget: image, media_folder: "frontend/public/uploads/mascote", public_folder: "/uploads/mascote", hint: "Aparece em Sobre e Contato" }
+              - { label: Texto alternativo do mascote, name: mascoteAlt, widget: string }
+          - label: Topo da Home
+            name: hero
+            widget: object
+            fields:
+              - { label: Linha da instituição, name: instituicao, widget: string }
+              - { label: Tema, name: tema, widget: string }
+              - { label: Data e local, name: data, widget: string }
+              - { label: Link do botão Submeter trabalho, name: linkSubmissao, widget: string }
+          - label: O que é a Expotec
+            name: sobre
+            widget: object
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: descricao, widget: text }
+              - { label: Imagem, name: imagem, widget: image, media_folder: "frontend/public/uploads/home", public_folder: "/uploads/home" }
+              - { label: Texto alternativo da imagem, name: imagemAlt, widget: string, hint: "Descreva a imagem para quem usa leitor de tela" }
+          - label: Edições passadas
+            name: edicoes
+            widget: list
+            label_singular: Edição
+            summary: "{{fields.ano}}"
+            fields:
+              - { label: Ano, name: ano, widget: number, value_type: int }
+              - label: Fotos
+                name: fotos
+                widget: list
+                label_singular: Foto
+                summary: "{{fields.alt}}"
+                fields:
+                  - { label: Foto, name: imagem, widget: image, media_folder: "frontend/public/uploads/edicoes", public_folder: "/uploads/edicoes" }
+                  - { label: Texto alternativo, name: alt, widget: string, hint: "Descreva o que aparece na foto" }
+          - label: Apoio
+            name: apoio
+            widget: list
+            label_singular: Apoiador
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Logo, name: logo, widget: image, media_folder: "frontend/public/uploads/logos", public_folder: "/uploads/logos" }
+          - label: Parceiros
+            name: parceiros
+            widget: list
+            label_singular: Parceiro
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Logo, name: logo, widget: image, media_folder: "frontend/public/uploads/logos", public_folder: "/uploads/logos" }
+          - label: Realização (rodapé)
+            name: realizacao
+            widget: list
+            label_singular: Realizador
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Logo, name: logo, widget: image, media_folder: "frontend/public/uploads/logos", public_folder: "/uploads/logos" }
+
+  # ───────── Programação ─────────
+  - name: programacao
+    label: Programação
+    files:
+      - name: atividades
+        label: Atividades
+        file: frontend/src/content/atividades.json
+        fields:
+          - label: Atividades
+            name: atividades
+            widget: list
+            label_singular: Atividade
+            summary: "{{fields.dia}} · {{fields.inicio}} · {{fields.titulo}}"
+            fields:
+              - { label: ID, name: id, widget: number, value_type: int, hint: "Número único, que não se repita em outra atividade" }
+              - label: Dia
+                name: dia
+                widget: select
+                options:
+                  - { label: Quarta, value: quarta }
+                  - { label: Quinta, value: quinta }
+                  - { label: Sexta, value: sexta }
+              - { label: Início, name: inicio, widget: string, hint: "Ex.: 08h00" }
+              - { label: Fim, name: fim, widget: string, hint: "Ex.: 12h00" }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Local, name: local, widget: string }
+              - label: Categoria
+                name: categoria
+                widget: select
+                options:
+                  - { label: Palestra, value: palestra }
+                  - { label: Oficina, value: oficina }
+                  - { label: Minicurso, value: minicurso }
+                  - { label: Exposição, value: exposicao }
+                  - { label: Cultural, value: cultural }
+              - { label: Link de inscrição, name: inscricao, widget: string, required: false, hint: "Link do SUAP para esta atividade. Sem link, o botão Inscrever-se não aparece" }
+
+  # ───────── Página Documentos ─────────
+  - name: documentos
+    label: Página Documentos
+    files:
+      - name: documentos
+        label: Avisos, recursos e arquivos
+        file: frontend/src/content/documentos.json
+        fields:
+          - label: Avisos
+            name: avisos
+            widget: list
+            label_singular: Aviso
+            summary: "{{fields.data}} · {{fields.titulo}}"
+            fields:
+              - { label: Data, name: data, widget: string, hint: "Ex.: 15/11" }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Link ou arquivo, name: href, widget: file, required: false, hint: "Sem link, o aviso aparece sem o botão Ler aviso" }
+          - label: Recursos (cartões coloridos)
+            name: recursos
+            widget: list
+            label_singular: Recurso
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: texto, widget: text }
+              - { label: Link ou arquivo, name: href, widget: file, required: false, hint: "Sem link, o cartão mostra Em breve" }
+              - { label: Cor do cartão, name: cor, widget: color }
+              - label: Forma decorativa
+                name: forma
+                widget: select
+                options: [circulo, pilula, quadrado, semicirculo, triangulo]
+              - { label: Cor da forma, name: corForma, widget: color }
+          - label: Arquivos para download
+            name: arquivos
+            widget: list
+            label_singular: Arquivo
+            summary: "{{fields.tipo}} · {{fields.titulo}}"
+            fields:
+              - label: Tipo
+                name: tipo
+                widget: select
+                options: [PDF, DOCX, PPTX, XLSX, ZIP]
+              - { label: Título, name: titulo, widget: string }
+              # Upload vai para frontend/public/uploads; o widget também aceita colar um link externo
+              - { label: Arquivo, name: href, widget: file, hint: "Envie o arquivo ou cole o link de onde ele está hospedado" }
+
+  # ───────── Trabalhos científicos ─────────
+  - name: trabalhos
+    label: Trabalhos científicos
+    files:
+      - name: trabalhos
+        label: Diretrizes e documentos
+        file: frontend/src/content/trabalhos.json
+        fields:
+          - label: Diretrizes
+            name: diretrizes
+            widget: list
+            label_singular: Diretriz
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - label: Forma decorativa
+                name: forma
+                widget: select
+                options: [circulo, pilula, quadrado, semicirculo, triangulo]
+              - { label: Cor, name: cor, widget: color }
+              - label: Itens
+                name: itens
+                widget: list
+                label_singular: Item
+                fields:
+                  - { label: Texto, name: texto, widget: text }
+                  - label: Link no meio do texto (opcional)
+                    name: link
+                    widget: object
+                    required: false
+                    fields:
+                      - { label: Trecho clicável, name: rotulo, widget: string, required: false }
+                      - { label: Endereço ou arquivo, name: href, widget: file, required: false }
+                  - { label: Texto após o link, name: complemento, widget: text, required: false }
+          - label: Documentos
+            name: documentos
+            widget: list
+            label_singular: Documento
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Link ou arquivo, name: href, widget: file, required: false, hint: "Sem link, o documento não aparece no site" }
+
+  # ───────── Organização ─────────
+  - name: organizacao
+    label: Organização
+    files:
+      - name: organizacao
+        label: Comissão geral
+        file: frontend/src/content/organizacao.json
+        fields:
+          - label: Setores
+            name: setores
+            widget: list
+            label_singular: Setor
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: Nome do setor, name: nome, widget: string, hint: "Ex.: Diretoria de Extensão" }
+              - label: Forma decorativa
+                name: forma
+                widget: select
+                options: [circulo, quadrado, semicirculo, triangulo]
+              - { label: Cor, name: cor, widget: color }
+              - label: Membros
+                name: membros
+                widget: list
+                label_singular: Membro
+                summary: "{{fields.nome}}"
+                fields:
+                  - { label: Nome, name: nome, widget: string }
+                  - { label: Função (opcional), name: funcao, widget: string, required: false, hint: "Ex.: Coordenadora" }
+
+  # ───────── Configurações do site ─────────
+  - name: site
+    label: Site
+    files:
+      - name: contato
+        label: Contato
+        file: frontend/src/content/contato.json
+        fields:
+          - { label: Instagram (sem @), name: instagram, widget: string }
+          - { label: E-mail, name: email, widget: string }
+          - { label: Telefone, name: telefone, widget: string }
+          - label: Endereço (uma linha por item)
+            name: endereco
+            widget: list
+            field: { label: Linha, name: linha, widget: string }

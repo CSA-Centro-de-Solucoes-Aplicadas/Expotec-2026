@@ -1,0 +1,127 @@
+{
+  "setores": [
+    {
+      "nome": "Diretoria de Extensão",
+      "forma": "circulo",
+      "cor": "#ff8c1a",
+      "membros": [
+        { "nome": "Brenda Camilli Alves Fernandes", "funcao": "Coordenadora" },
+        { "nome": "Alessandra Fortes Gabino Araujo" },
+        { "nome": "Gustavo André Pereira de Brito" },
+        { "nome": "Jacyra Inke Gomes da Silva" }
+      ]
+    },
+    {
+      "nome": "Diretoria Acadêmica de Gestão e Tecnologia da Informação",
+      "forma": "triangulo",
+      "cor": "#2eb10a",
+      "membros": [
+        { "nome": "Danielle Gomes de Freitas Medeiros" },
+        { "nome": "Lúcia de Fátima Lúcio Gomes da Costa" }
+      ]
+    },
+    {
+      "nome": "Diretoria Acadêmica de Ciências",
+      "forma": "semicirculo",
+      "cor": "#29d0d3",
+      "membros": [
+        { "nome": "Adriana Claudia Camara da Silva" },
+        { "nome": "Amadeu Albino Junior" },
+        { "nome": "Carla Aguiar Falcão" },
+        { "nome": "João Correia Saraiva Junior" },
+        { "nome": "Kalina Alessandra Rodrigues de Paiva" },
+        { "nome": "Marcelo Henrique Carneiro Camilo" },
+        { "nome": "Rafael Pereira de Melo" },
+        { "nome": "Valdier Ribeiro Santos Júnior" },
+        { "nome": "Victor Anderson Verissimo de Oliveira" }
+      ]
+    },
+    {
+      "nome": "Diretoria Acadêmica de Indústria",
+      "forma": "quadrado",
+      "cor": "#5300bb",
+      "membros": [
+        { "nome": "Aldayr Dantas de Araújo Júnior" },
+        { "nome": "Alessandro Pontes Cavalcanti" },
+        { "nome": "Gileno José de Vasconcelos Villar" },
+        { "nome": "Gilson Garcia da Silva" },
+        { "nome": "Jacques Cousteau da Silva Borges" }
+      ]
+    },
+    {
+      "nome": "Coordenação de Desporto",
+      "forma": "circulo",
+      "cor": "#ff55ff",
+      "membros": [{ "nome": "Maria Elizabete Sobral Paiva de Aquino" }]
+    },
+    {
+      "nome": "Coordenação de Administração Escolar",
+      "forma": "triangulo",
+      "cor": "#e02929",
+      "membros": [{ "nome": "Maria Valiene Gomes de Oliveira" }]
+    },
+    {
+      "nome": "Diretoria de Pesquisa e Inovação",
+      "forma": "semicirculo",
+      "cor": "#fdc803",
+      "membros": [
+        { "nome": "Allana Karyne da Costa Nobre" },
+        { "nome": "Handson Cláudio Dias Pimenta" }
+      ]
+    },
+    {
+      "nome": "Diretoria Acadêmica de Recursos Naturais",
+      "forma": "circulo",
+      "cor": "#ff8c1a",
+      "membros": [
+        { "nome": "Ceres Virginia da Costa Dantas" },
+        { "nome": "Dayana Melo Torre" },
+        { "nome": "Djalma Valério Ribeiro Neto" },
+        { "nome": "Luciana de Castro Medeiros" },
+        { "nome": "Maria Carolina de Albuquerque Feitosa Amador" },
+        { "nome": "Narla Sathler Musse de Oliveira" },
+        { "nome": "Ramon Evangelista dos Anjos Paiva" },
+        { "nome": "Ricardo Luiz Machado" }
+      ]
+    },
+    {
+      "nome": "Diretoria de Administração",
+      "forma": "triangulo",
+      "cor": "#2eb10a",
+      "membros": [
+        { "nome": "Esmaileini dos Santos Borges" },
+        { "nome": "José Heriberto de Oliveira" },
+        { "nome": "Gustavo Moura Cavalcanti" },
+        { "nome": "Tatiana Cardoso Delgado Kobayashi" }
+      ]
+    },
+    {
+      "nome": "Diretoria Acadêmica de Construção Civil",
+      "forma": "semicirculo",
+      "cor": "#29d0d3",
+      "membros": [
+        { "nome": "Evilane Cássia de Farias" },
+        { "nome": "Maria Cleide Ribeiro de Oliveira" },
+        { "nome": "Sarah Araújo Costa" }
+      ]
+    },
+    {
+      "nome": "Diretoria de Ensino",
+      "forma": "quadrado",
+      "cor": "#5300bb",
+      "membros": [{ "nome": "Silvana Andrade de Souza" }]
+    },
+    {
+      "nome": "Coordenação de Comunicação Social e Eventos",
+      "forma": "circulo",
+      "cor": "#ff55ff",
+      "membros": [{ "nome": "Tania Carvalho da Silva" }]
+    },
+    {
+      "nome": "Coordenação de Comunicações e Segurança",
+      "forma": "triangulo",
+      "cor": "#e02929",
+      "membros": [{ "nome": "Tonny Medeiros Martinho" }]
+    }
+  ]
+}

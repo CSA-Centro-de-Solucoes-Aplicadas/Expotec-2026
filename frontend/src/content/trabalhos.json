@@ -1,0 +1,94 @@
+{
+  "diretrizes": [
+    {
+      "titulo": "Pontualidade e organização",
+      "forma": "circulo",
+      "cor": "#ff8c1a",
+      "itens": [
+        {
+          "texto": "Compareça ao local da sessão com pelo menos 10 minutos de antecedência do início. Isso permitirá ajustar detalhes e evitar imprevistos."
+        },
+        {
+          "texto": "Realize o upload da sua apresentação no computador disponível na sala. Certifique-se de que os arquivos estão funcionando corretamente."
+        }
+      ]
+    },
+    {
+      "titulo": "Duração e estrutura da apresentação",
+      "forma": "triangulo",
+      "cor": "#2eb10a",
+      "itens": [
+        {
+          "texto": "O tempo total para apresentação é de 15 minutos, incluindo introdução, desenvolvimento e conclusão. Planeje-se para apresentar suas ideias de forma objetiva e clara dentro desse limite."
+        },
+        {
+          "texto": "É recomendável o uso do ",
+          "link": {
+            "rotulo": "template oficial da Expotec",
+            "href": "/uploads/TEMPLATE-EXPOTEC-RESUMO-EXPANDIDO.docx"
+          },
+          "complemento": ", disponível no portal da Expotec, para uniformizar as apresentações."
+        }
+      ]
+    },
+    {
+      "titulo": "Participação e engajamento",
+      "forma": "semicirculo",
+      "cor": "#29d0d3",
+      "itens": [
+        {
+          "texto": "Após sua apresentação, esteja preparado para responder perguntas e receber feedback. Sua interação com o público é uma oportunidade valiosa de aprendizado e troca de ideias."
+        },
+        {
+          "texto": "Aproveite a sessão como um todo: assista às demais apresentações, anote pontos relevantes e participe ativamente das discussões. Perguntar ou comentar sobre os trabalhos de outros colegas enriquece o debate e fortalece as conexões acadêmicas."
+        }
+      ]
+    },
+    {
+      "titulo": "Sugestões para uma apresentação impactante",
+      "forma": "quadrado",
+      "cor": "#5300bb",
+      "itens": [
+        {
+          "texto": "Use uma linguagem clara e acessível."
+        },
+        {
+          "texto": "Destaque os pontos principais do seu trabalho, evitando detalhamentos excessivos."
+        },
+        {
+          "texto": "Utilize recursos visuais, gráficos e exemplos práticos para tornar sua apresentação mais atraente."
+        },
+        {
+          "texto": "Controle o tempo com atenção para não ultrapassar o limite e garantir um espaço adequado para perguntas."
+        }
+      ]
+    },
+    {
+      "titulo": "Dicas finais",
+      "forma": "pilula",
+      "cor": "#ff55ff",
+      "itens": [
+        {
+          "texto": "Mantenha uma postura profissional e demonstre confiança."
+        },
+        {
+          "texto": "Seja gentil e respeitoso durante as interações, mesmo em eventuais momentos de divergência de opiniões."
+        },
+        {
+          "texto": "Aproveite a experiência como uma oportunidade de crescimento pessoal e profissional."
+        }
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "titulo": "Resultado da seleção"
+    },
+    {
+      "titulo": "Horários das apresentações"
+    },
+    {
+      "titulo": "Modelo de apresentação"
+    }
+  ]
+}
