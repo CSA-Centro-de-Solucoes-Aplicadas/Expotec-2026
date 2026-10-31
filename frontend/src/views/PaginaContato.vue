@@ -23,14 +23,13 @@
                 </dd>
             </div>
         </dl>
-        <img :src="mascote" alt="Mascote da Expotec acenando" class="mascote">
+        <img :src="site.mascote" :alt="site.mascoteAlt" class="mascote">
     </div>
 </template>
 <script setup>
 import CabecalhoPagina from '@/components/base/CabecalhoPagina.vue'
 import IconeCategoria from '@/components/base/IconeCategoria.vue'
-import mascote from '@/assets/mascote/mascote.png'
-import { contato } from '@/data/home'
+import { contato, site } from '@/data/home'
 
 const canais = [
     { rotulo: 'E-mail', valor: contato.email, href: `mailto:${contato.email}`, forma: 'circulo', cor: '#ff8c1a' },

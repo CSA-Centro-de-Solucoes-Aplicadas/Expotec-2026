@@ -9,17 +9,17 @@
             <span class="forma pilula-rosa"></span>
             <span class="forma triangulo-verde"></span>
         </div>
-        <p class="institution-text"> IFRN · CAMPUS NATAL-CENTRAL · EDIÇÃO 2026 </p>
-        <h1><img :src="expotec" alt="Expotec"></h1>
-        <p class="theme-title">Vozes: pluralidade na Educação, Ciência e Tecnologia</p>
-        <p class="info-text">25 de novembro · Natal, RN</p>
+        <p class="institution-text">{{ hero.instituicao }}</p>
+        <h1><img :src="site.logo" alt="Expotec"></h1>
+        <p class="theme-title">{{ hero.tema }}</p>
+        <p class="info-text">{{ hero.data }}</p>
         <div class="acoes">
         <BaseButton variant="primary" href="#programacao" @click.prevent="rolarParaProgramacao">
             Ver programação
         </BaseButton>
         <BaseButton
             variant="secondary"
-            href="https://portal.ifrn.edu.br/campus/natalcentral/processo-seletivos-servidores/expotec-2026-submissao-de-trabalhos/"
+            :href="hero.linkSubmissao"
             target="_blank"
             rel="noopener"
         >
@@ -29,7 +29,7 @@
     </section>
 </template>
 <script setup>
-import expotec from "@/assets/expotec-extenso.svg"
+import { hero, site } from "@/data/home"
 import BaseButton from "../base/BaseButton.vue";
 
 // Rolagem suave feita aqui, pois a âncora nativa salta direto; respeita quem pede menos movimento

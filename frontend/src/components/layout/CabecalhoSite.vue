@@ -1,7 +1,7 @@
 <template>
 <header>
     <div class="cabecalho limite">
-        <router-link to="/"><img :src="expotec" alt="Logotipo da Expotec" class="logotipo"/></router-link>
+        <router-link to="/"><img :src="site.logo" alt="Logotipo da Expotec" class="logotipo"/></router-link>
         <nav class="nav-principal" aria-label="Navegação principal">
             <ul>
                 <li v-for="item in itensMenu" :key="item.rotulo">
@@ -225,7 +225,7 @@
 <script setup>
     import { onBeforeUnmount, onMounted, ref } from 'vue'
     import { useRoute } from 'vue-router'
-    import expotec from '@/assets/expotec-extenso.svg'
+    import { site } from '@/data/home'
 
     const itensMenu = [
         { rotulo: 'Sobre', destino: '/sobre' },

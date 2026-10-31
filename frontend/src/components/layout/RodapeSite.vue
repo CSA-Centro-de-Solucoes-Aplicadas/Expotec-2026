@@ -1,12 +1,11 @@
 <script setup>
-import expotec from '@/assets/expotec-extenso.svg'
-import { contato, realizacao } from '@/data/home'
+import { contato, realizacao, site } from '@/data/home'
 </script>
 <template>
     <footer>
         <div class="conteudo limite">
             <div class="marca">
-                <img :src="expotec" alt="Expotec" class="logotipo">
+                <img :src="site.logo" alt="Expotec" class="logotipo">
                 <h2 class="rotulo">Realização</h2>
                 <ul class="realizacao">
                     <li v-for="item in realizacao" :key="item.nome">

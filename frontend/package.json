@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "cms": "cd .. && npx decap-server",
+    "dev:cms": "run-p dev cms",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "run-s \"lint:*\"",

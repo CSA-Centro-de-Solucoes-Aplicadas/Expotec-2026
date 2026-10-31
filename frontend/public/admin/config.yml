@@ -3,15 +3,92 @@ backend:
   repo: CSA-Centro-de-Solucoes-Aplicadas/Expotec-2026
   branch: main
   auth_scope: repo # repositório privado
-  # base_url: https://SEU-OAUTH-PROXY  # descomente ao usar proxy próprio (Cloudflare Worker etc.)
+  # LOGIN: o painel usa o login do GitHub. Só quem tem acesso de escrita ao repositório consegue entrar.
+  # Fora do Netlify, é preciso um proxy OAuth (ex.: Cloudflare Worker). Veja docs/LOGIN-ADMIN.md,
+  # descomente a linha abaixo e troque pela URL do seu proxy:
+  # base_url: https://SEU-PROXY-OAUTH.workers.dev
 
-local_backend: true # só para desenvolvimento; remova em produção
+# Só funciona em localhost (npx decap-server): lá o painel abre sem login e grava direto nos arquivos.
+# Em produção o Decap ignora esta opção.
+local_backend: true
 
 locale: pt
 media_folder: frontend/public/uploads
 public_folder: /uploads
+logo_url: /favicon.png
 
 collections:
+  # ───────── Página inicial e imagens ─────────
+  - name: home
+    label: Página inicial e imagens
+    files:
+      - name: home
+        label: Home, logos e fotos
+        file: frontend/src/content/home.json
+        fields:
+          - label: Identidade do site
+            name: site
+            widget: object
+            fields:
+              - { label: Logotipo (SVG ou PNG), name: logo, widget: image, media_folder: "frontend/public/uploads", public_folder: "/uploads", hint: "Aparece no cabeçalho, no rodapé e na Home" }
+              - { label: Mascote, name: mascote, widget: image, media_folder: "frontend/public/uploads/mascote", public_folder: "/uploads/mascote", hint: "Aparece em Sobre e Contato" }
+              - { label: Texto alternativo do mascote, name: mascoteAlt, widget: string }
+          - label: Topo da Home
+            name: hero
+            widget: object
+            fields:
+              - { label: Linha da instituição, name: instituicao, widget: string }
+              - { label: Tema, name: tema, widget: string }
+              - { label: Data e local, name: data, widget: string }
+              - { label: Link do botão Submeter trabalho, name: linkSubmissao, widget: string }
+          - label: O que é a Expotec
+            name: sobre
+            widget: object
+            fields:
+              - { label: Título, name: titulo, widget: string }
+              - { label: Texto, name: descricao, widget: text }
+              - { label: Imagem, name: imagem, widget: image, media_folder: "frontend/public/uploads/home", public_folder: "/uploads/home" }
+              - { label: Texto alternativo da imagem, name: imagemAlt, widget: string, hint: "Descreva a imagem para quem usa leitor de tela" }
+          - label: Edições passadas
+            name: edicoes
+            widget: list
+            label_singular: Edição
+            summary: "{{fields.ano}}"
+            fields:
+              - { label: Ano, name: ano, widget: number, value_type: int }
+              - label: Fotos
+                name: fotos
+                widget: list
+                label_singular: Foto
+                summary: "{{fields.alt}}"
+                fields:
+                  - { label: Foto, name: imagem, widget: image, media_folder: "frontend/public/uploads/edicoes", public_folder: "/uploads/edicoes" }
+                  - { label: Texto alternativo, name: alt, widget: string, hint: "Descreva o que aparece na foto" }
+          - label: Apoio
+            name: apoio
+            widget: list
+            label_singular: Apoiador
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Logo, name: logo, widget: image, media_folder: "frontend/public/uploads/logos", public_folder: "/uploads/logos" }
+          - label: Parceiros
+            name: parceiros
+            widget: list
+            label_singular: Parceiro
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Logo, name: logo, widget: image, media_folder: "frontend/public/uploads/logos", public_folder: "/uploads/logos" }
+          - label: Realização (rodapé)
+            name: realizacao
+            widget: list
+            label_singular: Realizador
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Logo, name: logo, widget: image, media_folder: "frontend/public/uploads/logos", public_folder: "/uploads/logos" }
+
   # ───────── Programação ─────────
   - name: programacao
     label: Programação

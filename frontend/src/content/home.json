@@ -1,0 +1,90 @@
+{
+  "site": {
+    "logo": "/uploads/expotec-extenso.svg",
+    "mascote": "/uploads/mascote/mascote.png",
+    "mascoteAlt": "Mascote da Expotec acenando"
+  },
+  "hero": {
+    "instituicao": "IFRN · CAMPUS NATAL-CENTRAL · EDIÇÃO 2026",
+    "tema": "Vozes: pluralidade na Educação, Ciência e Tecnologia",
+    "data": "25 de novembro · Natal, RN",
+    "linkSubmissao": "https://portal.ifrn.edu.br/campus/natalcentral/processo-seletivos-servidores/expotec-2026-submissao-de-trabalhos/"
+  },
+  "sobre": {
+    "titulo": "O que é a Expotec",
+    "descricao": "A Exposição Científica, Tecnológica e Cultural do IFRN é o maior evento científico do Campus Natal-Central. É quando estudantes e servidores mostram à comunidade interna e externa o que se produz no campus em ensino, pesquisa, extensão e cultura.",
+    "imagem": "/uploads/home/sobre-expotec.png",
+    "imagemAlt": "Estudantes apresentam robôs de LEGO a crianças em um estande da Expotec"
+  },
+  "edicoes": [
+    {
+      "ano": 2025,
+      "fotos": [
+        { "imagem": "/uploads/edicoes/2025-expotec (1).jpeg", "alt": "Oficial da Marinha e palestrantes abrem a Expotec no palco do auditório." },
+        { "imagem": "/uploads/edicoes/2025-expotec (6).jpeg", "alt": "Faixa oficial da Expotec se destaca na estrutura metálica de entrada do evento." },
+        { "imagem": "/uploads/edicoes/2025-expotec (9).jpeg", "alt": "Palestrante ministra oficina para turma atenta de alunos idosos." },
+        { "imagem": "/uploads/edicoes/2025-expotec (10).jpeg", "alt": "Alunos e instrutor de colete de segurança posam para foto no laboratório." }
+      ]
+    },
+    {
+      "ano": 2021,
+      "fotos": [
+        { "imagem": "/uploads/edicoes/2021-expotec3.png", "alt": "Apresentadores abrem a Expotec no palco do auditório" },
+        { "imagem": "/uploads/edicoes/2021-expotec.png", "alt": "Trio de clarinete, piano e violoncelo se apresenta no palco" },
+        { "imagem": "/uploads/edicoes/2021-expotec2.jpg", "alt": "Músico toca violão sentado no Palco Cultural" },
+        { "imagem": "/uploads/edicoes/2021-expotec4.png", "alt": "Estudante canta no espetáculo O Nordeste Tecnológico" }
+      ]
+    },
+    {
+      "ano": 2017,
+      "fotos": [
+        { "imagem": "/uploads/edicoes/2017-oficina.jpg", "alt": "Estudante auxilia visitante em uma oficina prática" },
+        { "imagem": "/uploads/home/sobre-expotec.png", "alt": "Crianças observam robôs de LEGO em um estande" },
+        { "imagem": "/uploads/edicoes/2017-danca.jpg", "alt": "Apresentação de dança no palco do evento" },
+        { "imagem": "/uploads/edicoes/2017-estande.jpg", "alt": "Estudante apresenta projeto com placa solar em um estande" }
+      ]
+    },
+    {
+      "ano": 2016,
+      "fotos": [
+        { "imagem": "/uploads/edicoes/2016-expotec.png", "alt": "Estudantes e professores posam diante dos pôsteres de seus projetos" },
+        { "imagem": "/uploads/edicoes/2016-expotec2.png", "alt": "Banda sinfônica do campus se apresenta com regente" },
+        { "imagem": "/uploads/edicoes/2016-expotec3.png", "alt": "Estudantes tocam clarinete na banda sinfônica" },
+        { "imagem": "/uploads/edicoes/2016-expotec4.png", "alt": "Integrantes de um grupo escoteiro no estande de doações" }
+      ]
+    },
+    {
+      "ano": 2014,
+      "fotos": [
+        { "imagem": "/uploads/edicoes/2014-expotec.png", "alt": "Estudantes jogam um jogo de tabuleiro gigante no estande de Educação Matemática" },
+        { "imagem": "/uploads/edicoes/2014-expotec2.png", "alt": "Violinista e pianista se apresentam no palco para estudantes" },
+        { "imagem": "/uploads/edicoes/2014-expotec3.png", "alt": "Estudantes fazem uma atividade ao ar livre no gramado do campus" },
+        { "imagem": "/uploads/edicoes/2014-expotec4.png", "alt": "Visitantes participam de jogos matemáticos em um estande" }
+      ]
+    },
+    {
+      "ano": 2013,
+      "fotos": [
+        { "imagem": "/uploads/edicoes/2013-expotec2.png", "alt": "Placa iluminada da Expotec 2013 ao anoitecer" },
+        { "imagem": "/uploads/edicoes/2013-expotec.png", "alt": "Estudantes e professor jogam no estande Aqui é Legal Aprender Matemática" },
+        { "imagem": "/uploads/edicoes/2013-expotec3.png", "alt": "Estudantes recebem premiação no auditório" },
+        { "imagem": "/uploads/edicoes/2013-expotec4.png", "alt": "Estudantes pintam juntos um painel coletivo" }
+      ]
+    }
+  ],
+  "apoio": [
+    { "nome": "FUNCERN – Fundação de Apoio ao IFRN", "logo": "/uploads/logos/funcern.png" }
+  ],
+  "parceiros": [
+    { "nome": "CERN", "logo": "/uploads/logos/cern.png" },
+    { "nome": "AEB – Agência Espacial Brasileira", "logo": "/uploads/logos/aeb.png" },
+    { "nome": "Ministério da Ciência, Tecnologia e Inovação", "logo": "/uploads/logos/mcti.png" },
+    { "nome": "Livraria Cooperativa Cultural", "logo": "/uploads/logos/livraria-2048x1024.png" },
+    { "nome": "MCM – Museu de Ciências Morfológicas", "logo": "/uploads/logos/mcm-2048x1024.png" }
+  ],
+  "realizacao": [
+    { "nome": "Instituto Federal do Rio Grande do Norte – Campus Natal-Central", "logo": "/uploads/logos/ifrn.png" },
+    { "nome": "DPEQ – Diretoria de Pesquisa e Inovação", "logo": "/uploads/logos/dpeq.png" },
+    { "nome": "DIREX – Diretoria de Extensão", "logo": "/uploads/logos/direx.png" }
+  ]
+}

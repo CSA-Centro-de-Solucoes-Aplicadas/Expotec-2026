@@ -10,7 +10,7 @@
             resultados e trocarem experiências com colegas e profissionais de áreas afins.
         </p>
         <template #lateral>
-            <img :src="mascote" alt="Mascote da Expotec acenando" class="mascote">
+            <img :src="site.mascote" :alt="site.mascoteAlt" class="mascote">
         </template>
     </CabecalhoPagina>
     <ListraFormas/>
@@ -47,7 +47,7 @@ import CabecalhoPagina from '@/components/base/CabecalhoPagina.vue'
 import ListraFormas from '@/components/base/ListraFormas.vue'
 import TituloSecao from '@/components/base/TituloSecao.vue'
 import CartoesPluralidade from '@/components/modules/CartoesPluralidade.vue'
-import mascote from '@/assets/mascote/mascote.png'
+import { site } from '@/data/home'
 </script>
 <style scoped>
 /* A listra de formas logo abaixo já separa o cabeçalho, então a borda sai */
