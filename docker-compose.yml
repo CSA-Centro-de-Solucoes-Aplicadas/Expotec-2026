@@ -15,3 +15,21 @@ services:
     ports:
       - "${PORT:-8080}:80"
     restart: unless-stopped
+    labels:
+      # Só os containers com esta etiqueta são atualizados pelo Watchtower
+      - com.centurylinklabs.watchtower.enable=true
+
+  # Confere o Docker Hub de tempos em tempos e, se houver imagem nova do site,
+  # baixa e reinicia o container sozinho. Fork mantido do Watchtower original (arquivado).
+  watchtower:
+    image: nickfedor/watchtower:latest
+    restart: unless-stopped
+    environment:
+      WATCHTOWER_LABEL_ENABLE: "true" # não mexe nos outros containers do servidor
+      WATCHTOWER_POLL_INTERVAL: ${WATCHTOWER_INTERVALO:-7200} # segundos entre as checagens (7200 = 2 horas)
+      WATCHTOWER_CLEANUP: "true" # apaga a imagem antiga depois de atualizar
+      TZ: America/Fortaleza
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Se o repositório no Docker Hub for privado, faça "docker login" no servidor e descomente:
+      # - ~/.docker/config.json:/config.json:ro
