@@ -1,0 +1,17 @@
+# Uso:
+#   docker compose up -d --build     -> gera a imagem e sobe o site em http://localhost:8080
+#   docker compose push              -> envia a imagem para o Docker Hub (precisa de "docker login")
+#
+# Troque o usuário do Docker Hub com a variável DOCKERHUB_USER (ou num arquivo .env).
+# Precisa ser o nome no Docker Hub (só minúsculas e números), não o da organização no GitHub:
+#   DOCKERHUB_USER=meuusuario docker compose build
+#
+# A imagem também é gerada e enviada automaticamente pelo GitHub Actions (.github/workflows/docker.yml).
+services:
+  site:
+    image: ${DOCKERHUB_USER:-csaifrn}/expotec-2026:${TAG:-latest}
+    build:
+      context: ./frontend
+    ports:
+      - "${PORT:-8080}:80"
+    restart: unless-stopped

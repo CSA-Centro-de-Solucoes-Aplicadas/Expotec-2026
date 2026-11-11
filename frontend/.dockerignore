@@ -1,0 +1,8 @@
+node_modules
+dist
+.eslintcache
+.vscode
+*.log
+src/assets.zip
+Dockerfile
+.dockerignore
