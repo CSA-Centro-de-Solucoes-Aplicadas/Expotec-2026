@@ -26,7 +26,7 @@ services:
     restart: unless-stopped
     environment:
       WATCHTOWER_LABEL_ENABLE: "true" # não mexe nos outros containers do servidor
-      WATCHTOWER_POLL_INTERVAL: ${WATCHTOWER_INTERVALO:-7200} # segundos entre as checagens (7200 = 2 horas)
+      WATCHTOWER_POLL_INTERVAL: ${WATCHTOWER_INTERVALO:-300} # segundos entre as checagens (300 = 5 minutos)
       WATCHTOWER_CLEANUP: "true" # apaga a imagem antiga depois de atualizar
       TZ: America/Fortaleza
     volumes:
