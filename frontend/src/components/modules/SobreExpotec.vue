@@ -1,28 +1,30 @@
+
 <template>
     <section id="sobre" class="limite">
-        <div>
-            <h2 class="titulo2-exp">{{ sobre.titulo }}</h2>
-            <p class="descricao-exp">{{ sobre.descricao }}</p>
-        </div>
+        <p class="descricao-exp">{{ sobre.descricao }}</p>
+
         <img :src="sobre.imagem" :alt="sobre.imagemAlt">
     </section>
 </template>
+
 <script setup>
 import { sobre } from '@/data/home'
 </script>
+
 <style scoped>
 section {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1.2fr 1fr;
     align-items: start;
     gap: 3rem;
     padding-block: var(--espaco-secao);
 }
 
 section p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.7;
+    margin: 0;
 }
 
 section img {
@@ -37,7 +39,7 @@ section img {
 @media (max-width: 768px) {
     section {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     section p {
