@@ -12,11 +12,11 @@
         <p class="institution-text"> IFRN · CAMPUS NATAL-CENTRAL · EDIÇÃO 2026 </p>
         <h1><img :src="expotec" alt="Expotec"></h1>
         <p class="theme-title">Vozes: pluralidade na Educação, Ciência e Tecnologia</p>
-        <p class="info-text">25 de novembro · Natal, RN</p>
+        <p class="info-text">25 a 27 de novembro · Natal, RN</p>
         <div class="acoes">
-        <BaseButton variant="primary" href="#programacao" @click.prevent="rolarParaProgramacao">
+        <!-- <BaseButton variant="primary" href="#programacao" @click.prevent="rolarParaProgramacao">
             Ver programação
-        </BaseButton>
+        </BaseButton> -->
         <BaseButton
             variant="secondary"
             href="https://portal.ifrn.edu.br/campus/natalcentral/processo-seletivos-servidores/expotec-2026-submissao-de-trabalhos/"
