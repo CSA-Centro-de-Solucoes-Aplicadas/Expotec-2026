@@ -1,21 +1,31 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import IconeCategoria from '../base/IconeCategoria.vue'
 import ItemAtividade from './ItemAtividade.vue'
 import { atividades, categorias, dias } from '@/data/programacao'
 
 const diaSelecionado = ref(dias[0].id)
 const categoriaSelecionada = ref('todas')
+const quantidadeVisivel = ref(10)
 
 const categoriasPorId = Object.fromEntries(categorias.map((categoria) => [categoria.id, categoria]))
+
+watch([diaSelecionado, categoriaSelecionada], () => {
+    quantidadeVisivel.value = 10
+})
 
 const atividadesFiltradas = computed(() =>
     atividades.filter(
         (atividade) =>
             atividade.dia === diaSelecionado.value &&
             (categoriaSelecionada.value === 'todas' || atividade.categoria === categoriaSelecionada.value)
-    )
+    ).sort((a, b) => {
+        const [horaA, minutoA] = a.inicio.split(':').map(Number)
+        const [horaB, minutoB] = b.inicio.split(':').map(Number)
+        return horaA * 60 + minutoA - (horaB * 60 + minutoB)
+    })
 )
+const atividadesVisiveis = computed(() => atividadesFiltradas.value.slice(0, quantidadeVisivel.value))
 </script>
 <template>
     <section id="programacao" aria-labelledby="titulo-programacao">
@@ -69,13 +79,21 @@ const atividadesFiltradas = computed(() =>
 
             <ul v-if="atividadesFiltradas.length" class="atividades">
                 <ItemAtividade
-                    v-for="atividade in atividadesFiltradas"
+                    v-for="atividade in atividadesVisiveis"
                     :key="atividade.id"
                     :atividade="atividade"
                     :categoria="categoriasPorId[atividade.categoria]"
                 />
             </ul>
-            <p v-else class="sem-atividades" role="status">
+            <button
+                v-if="atividadesVisiveis.length < atividadesFiltradas.length"
+                type="button"
+                class="ver-mais"
+                @click="quantidadeVisivel += 10"
+            >
+                Ver mais
+            </button>
+            <p v-if="!atividadesFiltradas.length" class="sem-atividades" role="status">
                 {{ atividades.length ? 'Nenhuma atividade encontrada para este dia e tipo.' : 'A programação será publicada em breve.' }}
             </p>
         </div>
@@ -194,6 +212,21 @@ button:focus-visible {
 .filtro[aria-pressed='true'] {
     background-color: var(--cor-marrom);
     color: white;
+}
+
+.ver-mais {
+    display: block;
+    margin: 1.5rem auto 0;
+    padding: 0.625rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid var(--cor-marrom);
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.ver-mais:hover {
+    background-color: white;
 }
 
 .atividades {

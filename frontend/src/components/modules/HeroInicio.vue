@@ -9,14 +9,11 @@
             <span class="forma pilula-rosa"></span>
             <span class="forma triangulo-verde"></span>
         </div>
-        <p class="institution-text">{{ hero.instituicao }}</p>
+        <p class="institution-text"> IFRN · CAMPUS NATAL-CENTRAL · EDIÇÃO 2026 </p>
         <h1><img :src="site.logo" alt="Expotec"></h1>
-        <p class="theme-title">{{ hero.tema }}</p>
-        <p class="info-text">{{ hero.data }}</p>
+        <p class="theme-title">Vozes: pluralidade na Educação, Ciência e Tecnologia</p>
+        <p class="info-text">25 a 27 de novembro · Natal, RN</p>
         <div class="acoes">
-        <BaseButton variant="primary" href="#programacao" @click.prevent="rolarParaProgramacao">
-            Ver programação
-        </BaseButton>
         <BaseButton
             variant="secondary"
             :href="hero.linkSubmissao"
