@@ -6,7 +6,7 @@ backend:
   # LOGIN: o painel usa o login do GitHub. Só quem tem acesso de escrita ao repositório consegue entrar.
   # Fora do Netlify, é preciso um proxy OAuth (ex.: Cloudflare Worker). Veja docs/LOGIN-ADMIN.md,
   # descomente a linha abaixo e troque pela URL do seu proxy:
-  # base_url: https://SEU-PROXY-OAUTH.workers.dev
+  base_url: https://sveltia-cms-auth.ermesson2k8and.workers.dev
 
 # Só funciona em localhost (npx decap-server): lá o painel abre sem login e grava direto nos arquivos.
 # Em produção o Decap ignora esta opção.
