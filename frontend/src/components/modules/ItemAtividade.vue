@@ -15,7 +15,7 @@ defineProps({
 </script>
 <template>
     <li class="atividade">
-        <p class="horario">{{ atividade.inicio }} – {{ atividade.fim }}</p>
+        <p class="horario">{{ atividade.fim ? `${atividade.inicio} – ${atividade.fim}` : atividade.inicio }}</p>
         <div class="detalhes">
             <h3>{{ atividade.titulo }}</h3>
             <p>{{ atividade.local }}</p>

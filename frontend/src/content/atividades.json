@@ -1,3 +1,954 @@
 {
-  "atividades": []
+  "atividades": [
+    {
+      "id": 1,
+      "dia": "quarta",
+      "inicio": "07h00",
+      "fim": "08h20",
+      "titulo": "A pressão de ter que dar certo: Autocobrança, perfeccionismo e medo de fracassar — Alicia Folgosi",
+      "local": "Sala 3",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 2,
+      "dia": "quarta",
+      "inicio": "08h00",
+      "fim": "16h00",
+      "titulo": "Labirinto Matemático Clube de Ciências",
+      "local": "Ginásio/Quadras",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 3,
+      "dia": "quarta",
+      "inicio": "08h00",
+      "fim": "11h00",
+      "titulo": "Retrofit Tropical: Conforto, Sombra e Ventilação no Clima do Nordeste",
+      "local": "Sala de Desenho 1 DIACON",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 4,
+      "dia": "quarta",
+      "inicio": "09h00",
+      "fim": "12h00",
+      "titulo": "Minicurso Mão na Massa com a Topografia: Introdução aos Equipamentos de Medição",
+      "local": "Sala de Topografia",
+      "categoria": "minicurso",
+      "inscricao": ""
+    },
+    {
+      "id": 5,
+      "dia": "quarta",
+      "inicio": "07h00",
+      "fim": "08h20",
+      "titulo": "Além do Peso: Aspectos Farmacológicos e Psicológicos no Uso das “Canetas Emagrecedoras.” — Isaac Dantas",
+      "local": "Sala 4",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 6,
+      "dia": "quarta",
+      "inicio": "09h00",
+      "fim": "11h00",
+      "titulo": "Vivência: Valores Afro-civilizatórios para uma Educação Antirracista (Aquilombar)",
+      "local": "Ginásio/Quadras",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10190/"
+    },
+    {
+      "id": 7,
+      "dia": "quarta",
+      "inicio": "09h00",
+      "fim": "12h00",
+      "titulo": "Abertura da Expotec — Palestra com apresentação do Coral Lourdes Guilherme",
+      "local": "Auditório Mini C",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 8,
+      "dia": "quarta",
+      "inicio": "07h00",
+      "fim": "18h00",
+      "titulo": "Formação Aquilombar",
+      "local": "Mini DIACIN",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10190/"
+    },
+    {
+      "id": 9,
+      "dia": "quarta",
+      "inicio": "09h00",
+      "fim": "10h00",
+      "titulo": "Palestra Taludes, Deslizamentos e Contenções",
+      "local": "Sala 1 DIACON",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 10,
+      "dia": "quarta",
+      "inicio": "09h00",
+      "fim": "11h30",
+      "titulo": "Exposição de Maquete Simulando Etapas de Execução de uma Obra de Estradas",
+      "local": "Laboratório de Estradas",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 11,
+      "dia": "quarta",
+      "inicio": "09h00",
+      "fim": "21h00",
+      "titulo": "Oficinas Segurança do Trabalho",
+      "local": "Bloco D / NIT",
+      "categoria": "oficina",
+      "inscricao": ""
+    },
+    {
+      "id": 12,
+      "dia": "quarta",
+      "inicio": "07h00",
+      "fim": "08h20",
+      "titulo": "Respiração e Consciência Corporal: Descobrindo o Funcionamento do Corpo — João Targino",
+      "local": "Sala 5",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 13,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "11h30",
+      "titulo": "Oficina de Técnica Vocal",
+      "local": "Sala do Coral CNAT",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10158/"
+    },
+    {
+      "id": 14,
+      "dia": "quarta",
+      "inicio": "08h30",
+      "fim": "10h00",
+      "titulo": "O papel do exercício físico no enfrentamento da ansiedade e depressão — Caio Roque",
+      "local": "Sala 3",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 15,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "11h00",
+      "titulo": "Oficina de Pinturas Rupestres e Direitos Humanos",
+      "local": "Sala de Atividades do Museu",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/inscricao/1/10205/"
+    },
+    {
+      "id": 16,
+      "dia": "quarta",
+      "inicio": "08h30",
+      "fim": "10h00",
+      "titulo": "Estresse no Limite: Como Regular a Mente em Meio ao Caos Contemporâneo — Rodrigo Araújo",
+      "local": "Sala 4",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 17,
+      "dia": "quarta",
+      "inicio": "08h30",
+      "fim": "10h00",
+      "titulo": "Dança em Foco: Teoria e Prática das Danças Urbanas e Populares — Leonardo Souza",
+      "local": "Sala 5",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 18,
+      "dia": "quarta",
+      "inicio": "12h00",
+      "fim": "13h00",
+      "titulo": "Palco aberto (inscrições com o prof. João Gomes)",
+      "local": "Rosquinhas",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 19,
+      "dia": "quarta",
+      "inicio": "13h00",
+      "fim": "17h00",
+      "titulo": "Minicurso de Avaliação de Riscos Psicossociais",
+      "local": "Auditório Mini C",
+      "categoria": "minicurso",
+      "inscricao": ""
+    },
+    {
+      "id": 20,
+      "dia": "quarta",
+      "inicio": "13h00",
+      "fim": "17h00",
+      "titulo": "Evento do prof. Jairo",
+      "local": "Mini da DIAC",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 21,
+      "dia": "quarta",
+      "inicio": "14h00",
+      "fim": "18h00",
+      "titulo": "Apresentações Memoriais (Aquilombar)",
+      "local": "Sala de dança, sala de lutas, Biblioteca e DE",
+      "categoria": "exposicao",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10190/"
+    },
+    {
+      "id": 22,
+      "dia": "quarta",
+      "inicio": "14h30",
+      "fim": "16h00",
+      "titulo": "Mesa-redonda: O Canto Coral nos campi do IFRN",
+      "local": "Sala do Coral CNAT",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 23,
+      "dia": "quarta",
+      "inicio": "14h30",
+      "fim": "16h30",
+      "titulo": "Práticas experimentais de Química e Biologia",
+      "local": "Lab. de Biologia da DIAC",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 24,
+      "dia": "quarta",
+      "inicio": "14h30",
+      "fim": "18h00",
+      "titulo": "Visita: Atividades no Lab. de Eletricidade e Lab. de Acionamentos Elétricos",
+      "local": "Lab. de Eletricidade e Acionamentos Elétricos (DIACIN)",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 25,
+      "dia": "quarta",
+      "inicio": "14h30",
+      "fim": "16h00",
+      "titulo": "Minicurso Ensaios de substâncias nocivas em agregados",
+      "local": "Sala 6 DIACON e Laboratório de Materiais",
+      "categoria": "minicurso",
+      "inscricao": ""
+    },
+    {
+      "id": 26,
+      "dia": "quarta",
+      "inicio": "14h00",
+      "fim": "15h00",
+      "titulo": "Oficina de Identificação e classificação de rochas",
+      "local": "Sala de Atividades do Museu",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/inscricao/1/10214/"
+    },
+    {
+      "id": 27,
+      "dia": "quarta",
+      "inicio": "16h30",
+      "fim": "18h30",
+      "titulo": "Palestra Da Emissão à Captura de CO₂: Novos Caminhos para uma Construção Civil de Baixo Carbono",
+      "local": "Sala 6 DIACON",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 28,
+      "dia": "quarta",
+      "inicio": "16h00",
+      "fim": "",
+      "titulo": "Apresentação do Coral do Campus Canguaretama",
+      "local": "Palco / Área de convivência",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 29,
+      "dia": "quarta",
+      "inicio": "19h00",
+      "fim": "21h00",
+      "titulo": "III ETEST - Mesa Redonda: Atuação dos Órgãos de Fiscalização na Área de Segurança do Trabalho",
+      "local": "Auditório Mini C",
+      "categoria": "palestra",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10085/"
+    },
+    {
+      "id": 30,
+      "dia": "quarta",
+      "inicio": "19h00",
+      "fim": "21h00",
+      "titulo": "Palestra - Mineração, Tecnologia e Futuro: como transformar recursos minerais em desenvolvimento com responsabilidade ambiental",
+      "local": "Mini da DIAREN",
+      "categoria": "palestra",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10253/"
+    },
+    {
+      "id": 31,
+      "dia": "quinta",
+      "inicio": "07h00",
+      "fim": "08h20",
+      "titulo": "O papel do exercício físico no enfrentamento da ansiedade e depressão — Caio Roque",
+      "local": "Sala 3",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 32,
+      "dia": "quinta",
+      "inicio": "08h00",
+      "fim": "16h00",
+      "titulo": "Labirinto Matemático Clube de Ciências",
+      "local": "Ginásio/Quadras",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 33,
+      "dia": "quinta",
+      "inicio": "09h00",
+      "fim": "12h00",
+      "titulo": "Novembro Negro NEGEDI - palestras",
+      "local": "Auditório Mini C",
+      "categoria": "palestra",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10191/"
+    },
+    {
+      "id": 34,
+      "dia": "quinta",
+      "inicio": "07h00",
+      "fim": "18h00",
+      "titulo": "Formação Aquilombar",
+      "local": "Mini DIAREN",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10190/"
+    },
+    {
+      "id": 35,
+      "dia": "quinta",
+      "inicio": "08h30",
+      "fim": "12h00",
+      "titulo": "Oficina Uso de ferramentas de IA na resolução de problemas em Estruturas de concreto Armado e Protendido",
+      "local": "Laboratório de Informática 01 DIACON",
+      "categoria": "oficina",
+      "inscricao": ""
+    },
+    {
+      "id": 36,
+      "dia": "quinta",
+      "inicio": "08h00",
+      "fim": "12h00",
+      "titulo": "Minicurso Prospecção geotécnica e geofísica para construção civil",
+      "local": "Sala 1 DIACON e Laboratório de Mecânica dos Solos",
+      "categoria": "minicurso",
+      "inscricao": ""
+    },
+    {
+      "id": 37,
+      "dia": "quinta",
+      "inicio": "07h00",
+      "fim": "08h20",
+      "titulo": "Cérebro Hiperconectado: Dopamina e o Uso de Telas — Por que ficamos tão viciados e ansiosos? — Isaac Dantas",
+      "local": "Sala 4",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 38,
+      "dia": "quinta",
+      "inicio": "09h30",
+      "fim": "11h30",
+      "titulo": "Oficina de Técnica Vocal",
+      "local": "Sala do Coral CNAT",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10158/"
+    },
+    {
+      "id": 39,
+      "dia": "quinta",
+      "inicio": "09h00",
+      "fim": "11h30",
+      "titulo": "Exposição de Maquete Simulando Etapas de Execução de uma Obra de Estradas",
+      "local": "Laboratórios/Salas",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 40,
+      "dia": "quinta",
+      "inicio": "09h00",
+      "fim": "21h00",
+      "titulo": "III ETEST - Oficinas Segurança do Trabalho",
+      "local": "Bloco D / NIT",
+      "categoria": "oficina",
+      "inscricao": "https://sites.google.com/view/2etest/programação?authuser=0"
+    },
+    {
+      "id": 41,
+      "dia": "quinta",
+      "inicio": "07h00",
+      "fim": "08h20",
+      "titulo": "Dança em Foco: Teoria e Prática das Danças Urbanas e Populares — Leonardo Souza",
+      "local": "Sala 5",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 42,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "12h00",
+      "titulo": "CINE EXPOTEC - Canto de Acauã",
+      "local": "Miniauditório da DIAC",
+      "categoria": "cultural",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/inscricao/1/10228/"
+    },
+    {
+      "id": 43,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "12h30",
+      "titulo": "Workshop Roteiros/Planos de Importação",
+      "local": "Audiovisual 4 DIATINF",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10145/"
+    },
+    {
+      "id": 44,
+      "dia": "quinta",
+      "inicio": "09h00",
+      "fim": "12h00",
+      "titulo": "Minicurso Mão na Massa com a Topografia: Introdução aos Equipamentos de Medição",
+      "local": "Sala de Topografia",
+      "categoria": "minicurso",
+      "inscricao": ""
+    },
+    {
+      "id": 45,
+      "dia": "quinta",
+      "inicio": "08h30",
+      "fim": "10h00",
+      "titulo": "Respiração e Consciência Corporal: Descobrindo o Funcionamento do Corpo — João Targino",
+      "local": "Sala 3",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 46,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "11h00",
+      "titulo": "Oficina de Identificação e classificação de rochas",
+      "local": "Sala de Atividades do Museu",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/inscricao/1/10206/"
+    },
+    {
+      "id": 47,
+      "dia": "quinta",
+      "inicio": "09h00",
+      "fim": "12h00",
+      "titulo": "Visita: Atividades no Lab. de Eletricidade e Lab. de Acionamentos Elétricos",
+      "local": "Lab. de Eletricidade e Acionamentos Elétricos (DIACIN)",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 48,
+      "dia": "quinta",
+      "inicio": "08h30",
+      "fim": "10h00",
+      "titulo": "Atenção Sequestrada: por que está tão difícil se concentrar? — Rodrigo Araújo",
+      "local": "Sala 4",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 49,
+      "dia": "quinta",
+      "inicio": "12h00",
+      "fim": "13h00",
+      "titulo": "Palco aberto (inscrições com o prof. João Gomes)",
+      "local": "Rosquinhas",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 50,
+      "dia": "quinta",
+      "inicio": "13h00",
+      "fim": "22h00",
+      "titulo": "Palestras - C.A. DIATINF",
+      "local": "Auditório Mini C",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 51,
+      "dia": "quinta",
+      "inicio": "14h00",
+      "fim": "18h00",
+      "titulo": "III ETEST - Minicurso de Práticas de Ensino em Segurança do Trabalho",
+      "local": "Mini da DIAC",
+      "categoria": "minicurso",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10110/"
+    },
+    {
+      "id": 52,
+      "dia": "quinta",
+      "inicio": "14h00",
+      "fim": "21h00",
+      "titulo": "Mini palestras - Centro Acadêmico DIATINF",
+      "local": "Auditório Mini C",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 53,
+      "dia": "quinta",
+      "inicio": "14h30",
+      "fim": "16h30",
+      "titulo": "Práticas experimentais de Química e Biologia",
+      "local": "Lab. de Biologia da DIAC",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 54,
+      "dia": "quinta",
+      "inicio": "14h30",
+      "fim": "18h30",
+      "titulo": "Prática de Ensaios Não Destrutivos (NDT) para Avaliação da Durabilidade de Estruturas de Concreto in loco",
+      "local": "Laboratório de Durabilidade",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 55,
+      "dia": "quinta",
+      "inicio": "14h00",
+      "fim": "16h00",
+      "titulo": "Corpo-Território em Tecitura: Memórias, Ancestralidade e Construção do Ser Negra (Projeto Eu Sou Preta)",
+      "local": "Sala de dança do NUARTE",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 56,
+      "dia": "quinta",
+      "inicio": "14h30",
+      "fim": "18h00",
+      "titulo": "Visita: Atividades no Lab. de Eletricidade e Lab. de Acionamentos Elétricos",
+      "local": "Lab. de Eletricidade e Acionamentos Elétricos (DIACIN)",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 57,
+      "dia": "quinta",
+      "inicio": "15h00",
+      "fim": "17h30",
+      "titulo": "Palestra - Mecanização e agroindustrialização na agricultura familiar",
+      "local": "Laboratórios/Salas",
+      "categoria": "palestra",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10174/"
+    },
+    {
+      "id": 58,
+      "dia": "quinta",
+      "inicio": "14h00",
+      "fim": "16h00",
+      "titulo": "Oficina de Produção de Sabão Ecológico a partir do Reaproveitamento de Oléo Usado - Projeto Caminhos Limpos",
+      "local": "Lab. 29 da DIAREN",
+      "categoria": "oficina",
+      "inscricao": ""
+    },
+    {
+      "id": 59,
+      "dia": "quinta",
+      "inicio": "16h00",
+      "fim": "",
+      "titulo": "Apresentação musical - Batuque de Mulheres",
+      "local": "Rosquinhas",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 60,
+      "dia": "quinta",
+      "inicio": "14h00",
+      "fim": "21h00",
+      "titulo": "Mini palestras - Centro Acadêmico DIATINF",
+      "local": "Auditório Mini C",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 61,
+      "dia": "quinta",
+      "inicio": "19h00",
+      "fim": "21h00",
+      "titulo": "III ETEST - Sala Temática: Aplicação do Jogo de Tabuleiro Sinistro",
+      "local": "Sala 6",
+      "categoria": "exposicao",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10185/"
+    },
+    {
+      "id": 62,
+      "dia": "quinta",
+      "inicio": "19h00",
+      "fim": "21h00",
+      "titulo": "III ETEST - Curso de Suporte Básico de Vida",
+      "local": "Lab. Primeiros Socorros",
+      "categoria": "minicurso",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10196/"
+    },
+    {
+      "id": 63,
+      "dia": "quinta",
+      "inicio": "19h00",
+      "fim": "21h00",
+      "titulo": "III ETEST - Painel Carreiras na Área de Segurança do Trabalho (formato híbrido)",
+      "local": "Lab. Ergonomia",
+      "categoria": "palestra",
+      "inscricao": "https://sites.google.com/view/2etest/programação?authuser=0"
+    },
+    {
+      "id": 64,
+      "dia": "sexta",
+      "inicio": "07h00",
+      "fim": "08h20",
+      "titulo": "Respiração e Consciência Corporal: Descobrindo o Funcionamento do Corpo — João Targino",
+      "local": "Sala 3",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 65,
+      "dia": "sexta",
+      "inicio": "08h00",
+      "fim": "12h00",
+      "titulo": "Competição de Ponte de Macarrão",
+      "local": "Ginásio/Quadras",
+      "categoria": "exposicao",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10140/"
+    },
+    {
+      "id": 66,
+      "dia": "sexta",
+      "inicio": "08h00",
+      "fim": "12h00",
+      "titulo": "Palestras sobre o Novembro Negro NEGEDI",
+      "local": "Auditório Mini C",
+      "categoria": "palestra",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10191/"
+    },
+    {
+      "id": 67,
+      "dia": "sexta",
+      "inicio": "08h00",
+      "fim": "12h00",
+      "titulo": "I Workshop - Impacto da Extensão na Pós-Graduação: PROEXTPG/IFRN",
+      "local": "Mini da DIAREN",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10159/"
+    },
+    {
+      "id": 68,
+      "dia": "sexta",
+      "inicio": "08h00",
+      "fim": "10h00",
+      "titulo": "Oficina - De gota em gota: obtenção de biodiesel a partir de óleo residual - práticas laboratoriais",
+      "local": "Lab. Petróleo e Gás",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10261/"
+    },
+    {
+      "id": 69,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "12h00",
+      "titulo": "Oficina - De gota em gota: obtenção de biodiesel a partir de óleo residual - práticas laboratoriais",
+      "local": "Lab. Petróleo e Gás",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10263/"
+    },
+    {
+      "id": 70,
+      "dia": "sexta",
+      "inicio": "07h00",
+      "fim": "08h20",
+      "titulo": "Inteligência Artificial no Cotidiano: Ferramenta de Apoio ou Ameaça à Saúde Mental? — Isaac Dantas",
+      "local": "Sala 4",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 71,
+      "dia": "sexta",
+      "inicio": "08h00",
+      "fim": "16h00",
+      "titulo": "Labirinto Matemático Clube de Ciências",
+      "local": "Ginásio/Quadras",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 72,
+      "dia": "sexta",
+      "inicio": "09h00",
+      "fim": "12h00",
+      "titulo": "Workshop Comércio Internacional: análise setorial continente/país",
+      "local": "Audiovisual 2 DIATINF",
+      "categoria": "oficina",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10146/"
+    },
+    {
+      "id": 73,
+      "dia": "sexta",
+      "inicio": "09h00",
+      "fim": "11h30",
+      "titulo": "Exposição de Maquete Simulando Etapas de Execução de uma Obra de Estradas",
+      "local": "Laboratórios/Salas",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 74,
+      "dia": "sexta",
+      "inicio": "09h00",
+      "fim": "21h00",
+      "titulo": "Oficinas Segurança do Trabalho",
+      "local": "Bloco D / NIT",
+      "categoria": "oficina",
+      "inscricao": ""
+    },
+    {
+      "id": 75,
+      "dia": "sexta",
+      "inicio": "07h00",
+      "fim": "08h20",
+      "titulo": "Dança em Foco: Teoria e Prática das Danças Urbanas e Populares — Leonardo Souza",
+      "local": "Sala 5",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 76,
+      "dia": "sexta",
+      "inicio": "09h00",
+      "fim": "10h00",
+      "titulo": "Aprendendo sobre os bens Minerais do RN Brincando",
+      "local": "Sala de Atividades do Museu",
+      "categoria": "palestra",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10208/"
+    },
+    {
+      "id": 77,
+      "dia": "sexta",
+      "inicio": "08h00",
+      "fim": "11h00",
+      "titulo": "Sala de Sensações",
+      "local": "Sala de Dança",
+      "categoria": "exposicao",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10151/"
+    },
+    {
+      "id": 78,
+      "dia": "sexta",
+      "inicio": "09h00",
+      "fim": "12h00",
+      "titulo": "Visita: Atividades no Lab. de Eletricidade e Lab. de Acionamentos Elétricos",
+      "local": "Lab. de Eletricidade e Acionamentos Elétricos (DIACIN)",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 79,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "12h00",
+      "titulo": "Palestra - Concreto Autoadensável: Tecnologia, Desempenho e Aplicações na Construção Civil",
+      "local": "Sala 6 DIACON e Laboratório de Materiais",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 80,
+      "dia": "sexta",
+      "inicio": "08h30",
+      "fim": "10h00",
+      "titulo": "O papel do exercício físico no enfrentamento da ansiedade e depressão — Caio Roque",
+      "local": "Sala 3",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 81,
+      "dia": "sexta",
+      "inicio": "10h30",
+      "fim": "11h00",
+      "titulo": "Minerais que Brincam e Ensinam: Teatro de Bonecos",
+      "local": "Miniauditório do Museu",
+      "categoria": "exposicao",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10207/"
+    },
+    {
+      "id": 82,
+      "dia": "sexta",
+      "inicio": "08h30",
+      "fim": "10h00",
+      "titulo": "Luz, Câmera e Olhar Fotográfico — Áster Dantas",
+      "local": "Sala 5",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 83,
+      "dia": "sexta",
+      "inicio": "12h00",
+      "fim": "13h00",
+      "titulo": "Palco aberto (inscrições com o prof. João Gomes)",
+      "local": "Rosquinhas",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 84,
+      "dia": "sexta",
+      "inicio": "14h00",
+      "fim": "18h00",
+      "titulo": "III ETEST - Minicurso de avaliação ocupacional de estresse térmico",
+      "local": "Laboratórios/Salas",
+      "categoria": "minicurso",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10111/"
+    },
+    {
+      "id": 85,
+      "dia": "sexta",
+      "inicio": "13h00",
+      "fim": "17h00",
+      "titulo": "Evento GEO Aplica",
+      "local": "Mini da DIAREN",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 86,
+      "dia": "sexta",
+      "inicio": "14h00",
+      "fim": "17h00",
+      "titulo": "Sala de Sensações",
+      "local": "Sala de Dança",
+      "categoria": "exposicao",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10151/"
+    },
+    {
+      "id": 87,
+      "dia": "sexta",
+      "inicio": "14h00",
+      "fim": "18h00",
+      "titulo": "Minicurso de riscos psicossociais",
+      "local": "Mini da DIAC",
+      "categoria": "minicurso",
+      "inscricao": "https://sites.google.com/view/2etest/programação?authuser=0"
+    },
+    {
+      "id": 88,
+      "dia": "sexta",
+      "inicio": "14h30",
+      "fim": "16h30",
+      "titulo": "Práticas experimentais de Química e Biologia",
+      "local": "Lab. de Biologia da DIAC",
+      "categoria": "exposicao",
+      "inscricao": ""
+    },
+    {
+      "id": 89,
+      "dia": "sexta",
+      "inicio": "14h00",
+      "fim": "17h00",
+      "titulo": "Palestra - A Ponte de Igapó",
+      "local": "Laboratórios/Salas",
+      "categoria": "palestra",
+      "inscricao": ""
+    },
+    {
+      "id": 90,
+      "dia": "sexta",
+      "inicio": "14h00",
+      "fim": "14h30",
+      "titulo": "Minerais que Brincam e Ensinam: Teatro de Bonecos",
+      "local": "Miniauditório do Museu",
+      "categoria": "exposicao",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10207/"
+    },
+    {
+      "id": 91,
+      "dia": "sexta",
+      "inicio": "16h00",
+      "fim": "",
+      "titulo": "Apresentação Orquestra",
+      "local": "Rosquinhas",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 92,
+      "dia": "sexta",
+      "inicio": "17h00",
+      "fim": "21h00",
+      "titulo": "II Encontro de Egressos - PPgUSRN",
+      "local": "Sala 24 DIAREN (1º andar)",
+      "categoria": "palestra",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10161/"
+    },
+    {
+      "id": 93,
+      "dia": "sexta",
+      "inicio": "17h00",
+      "fim": "",
+      "titulo": "Sorteios e encerramento da EXPOTEC",
+      "local": "Rosquinhas",
+      "categoria": "cultural",
+      "inscricao": ""
+    },
+    {
+      "id": 94,
+      "dia": "sexta",
+      "inicio": "19h00",
+      "fim": "21h00",
+      "titulo": "III ETEST - Painel Carreiras Profissionais na Área de Segurança do Trabalho",
+      "local": "Auditório Mini C",
+      "categoria": "palestra",
+      "inscricao": "https://sites.google.com/view/2etest/programação?authuser=0"
+    },
+    {
+      "id": 95,
+      "dia": "sexta",
+      "inicio": "19h00",
+      "fim": "21h00",
+      "titulo": "III ETEST - Sala Temática: Aplicação do Jogo de Tabuleiro Sinistro",
+      "local": "Sala 7",
+      "categoria": "exposicao",
+      "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10186/"
+    }
+  ]
 }
