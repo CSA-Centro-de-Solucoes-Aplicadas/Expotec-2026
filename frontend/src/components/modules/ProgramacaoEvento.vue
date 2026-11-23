@@ -10,6 +10,11 @@ const quantidadeVisivel = ref(7)
 
 const categoriasPorId = Object.fromEntries(categorias.map((categoria) => [categoria.id, categoria]))
 
+const horarioEmMinutos = (horario) => {
+    const [hora, minuto = '0'] = horario.trim().split(/[h:]/)
+    return Number(hora) * 60 + Number(minuto)
+}
+
 watch([diaSelecionado, categoriaSelecionada], () => {
     quantidadeVisivel.value = 7
 })
@@ -19,11 +24,7 @@ const atividadesFiltradas = computed(() =>
         (atividade) =>
             atividade.dia === diaSelecionado.value &&
             (categoriaSelecionada.value === 'todas' || atividade.categoria === categoriaSelecionada.value)
-    ).sort((a, b) => {
-        const [horaA, minutoA] = a.inicio.split(':').map(Number)
-        const [horaB, minutoB] = b.inicio.split(':').map(Number)
-        return horaA * 60 + minutoA - (horaB * 60 + minutoB)
-    })
+    ).sort((a, b) => horarioEmMinutos(a.inicio) - horarioEmMinutos(b.inicio))
 )
 const atividadesVisiveis = computed(() => atividadesFiltradas.value.slice(0, quantidadeVisivel.value))
 </script>
