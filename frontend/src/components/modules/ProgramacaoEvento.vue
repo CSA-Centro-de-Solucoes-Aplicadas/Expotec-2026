@@ -6,12 +6,12 @@ import { atividades, categorias, dias } from '@/data/programacao'
 
 const diaSelecionado = ref(dias[0].id)
 const categoriaSelecionada = ref('todas')
-const quantidadeVisivel = ref(10)
+const quantidadeVisivel = ref(7)
 
 const categoriasPorId = Object.fromEntries(categorias.map((categoria) => [categoria.id, categoria]))
 
 watch([diaSelecionado, categoriaSelecionada], () => {
-    quantidadeVisivel.value = 10
+    quantidadeVisivel.value = 7
 })
 
 const atividadesFiltradas = computed(() =>
@@ -89,7 +89,7 @@ const atividadesVisiveis = computed(() => atividadesFiltradas.value.slice(0, qua
                 v-if="atividadesVisiveis.length < atividadesFiltradas.length"
                 type="button"
                 class="ver-mais"
-                @click="quantidadeVisivel += 10"
+                @click="quantidadeVisivel += 7"
             >
                 Ver mais
             </button>
