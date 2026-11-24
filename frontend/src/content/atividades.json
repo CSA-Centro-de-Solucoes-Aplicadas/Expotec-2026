@@ -976,6 +976,24 @@
       "titulo": "Minicurso Ensaios de substâncias nocivas em agregados",
       "local": "Sala 6 DIACON e Laboratório de Materiais",
       "categoria": "minicurso"
+    },
+    {
+      "titulo": "Fundamentos de Instrumentação de Calor",
+      "id": 99,
+      "local": "Auditório do Bloco C",
+      "inicio": "14h30",
+      "fim": "17h30",
+      "dia": "sexta",
+      "categoria": "minicurso"
+    },
+    {
+      "id": 100,
+      "dia": "quarta",
+      "inicio": "14h00",
+      "fim": "18h00",
+      "titulo": "Ergonomia Física e Cognitiva com Prática de Ferramentas de Avaliação de de Biomecânica e Fatores Psicossociais no Trabalho",
+      "local": "Auditório C",
+      "categoria": "minicurso"
     }
   ]
 }
