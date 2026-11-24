@@ -27,14 +27,14 @@
       "fim": "12h00",
       "titulo": "Retrofit Tropical: Conforto, Sombra e Ventilação no Clima do Nordeste",
       "local": "Sala de Desenho 1 DIACON",
-      "categoria": "palestra",
+      "categoria": "oficina",
       "inscricao": ""
     },
     {
       "id": 4,
       "dia": "quarta",
-      "inicio": "09h00",
-      "fim": "12h00",
+      "inicio": "08h30",
+      "fim": "11h30",
       "titulo": "Minicurso Mão na Massa com a Topografia: Introdução aos Equipamentos de Medição",
       "local": "Sala de Topografia",
       "categoria": "minicurso",
@@ -343,8 +343,8 @@
     {
       "id": 35,
       "dia": "quinta",
-      "inicio": "08h30",
-      "fim": "12h00",
+      "inicio": "07h00",
+      "fim": "10h30",
       "titulo": "Oficina Uso de ferramentas de IA na resolução de problemas em Estruturas de concreto Armado e Protendido",
       "local": "Laboratório de Informática 01 DIACON",
       "categoria": "oficina",
@@ -949,6 +949,33 @@
       "local": "Sala 7",
       "categoria": "exposicao",
       "inscricao": "https://suap.ifrn.edu.br/eventos/evento/10186/"
+    },
+    {
+      "id": 96,
+      "dia": "quinta",
+      "inicio": "14h30",
+      "fim": "18h30",
+      "titulo": "Prática de Ensaios Não Destrutivos (NDT) para Avaliação da Durabilidade de Estruturas de Concreto in loco",
+      "local": "DIACON",
+      "categoria": "minicurso"
+    },
+    {
+      "titulo": "Introdução a avaliação de cargas nas estruturas - Teoria e prática",
+      "categoria": "minicurso",
+      "local": "DIACON",
+      "inicio": "14h00",
+      "fim": "17h00",
+      "dia": "quinta",
+      "id": 97
+    },
+    {
+      "id": 98,
+      "dia": "quinta",
+      "inicio": "14h30",
+      "fim": "16h00",
+      "titulo": "Minicurso Ensaios de substâncias nocivas em agregados",
+      "local": "Sala 6 DIACON e Laboratório de Materiais",
+      "categoria": "minicurso"
     }
   ]
 }
