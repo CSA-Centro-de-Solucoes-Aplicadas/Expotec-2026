@@ -20,10 +20,6 @@ defineProps({
             <h3>{{ atividade.titulo }}</h3>
             <p>{{ atividade.local }}</p>
         </div>
-        <p class="categoria">
-            <IconeCategoria :forma="categoria.forma" :cor="categoria.cor" />
-            {{ categoria.nome }}
-        </p>
         <!-- Sem link de inscrição no CMS (ex.: exposições abertas), o botão não aparece -->
         <BaseButton
             v-if="atividade.inscricao"
@@ -35,12 +31,16 @@ defineProps({
         >
             Inscrever-se
         </BaseButton>
+        <p class="categoria">
+            <IconeCategoria :forma="categoria.forma" :cor="categoria.cor" />
+            {{ categoria.nome }}
+        </p>
     </li>
 </template>
 <style scoped>
 .atividade {
     display: grid;
-    grid-template-columns: 11rem minmax(0, 1fr) 8.5rem auto;
+    grid-template-columns: 11rem minmax(0, 1fr) auto 8.5rem;
     align-items: center;
     gap: 1rem;
     padding: 1.25rem 1.5rem;
