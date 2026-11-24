@@ -994,6 +994,276 @@
       "titulo": "Ergonomia Física e Cognitiva com Prática de Ferramentas de Avaliação de de Biomecânica e Fatores Psicossociais no Trabalho",
       "local": "Auditório C",
       "categoria": "minicurso"
+    },
+    {
+      "id": 101,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Rota de Fuga",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 102,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Rota de Fuga",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 103,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Rota de Fuga",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 104,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Ruído",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 105,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Ruído",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 106,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Ruído",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 107,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Vibração",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 108,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Vibração",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 109,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Vibração",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 110,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Ergonomia",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 111,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Ergonomia",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 112,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Ergonomia",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 113,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Espaço Confinado",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 114,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Espaço Confinado",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 115,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Espaço Confinado",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 116,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Manutenção de Extintores ",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 117,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Manutenção de Extintores",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 118,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Manutenção de Extintores",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 119,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Trabalho em altura",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 120,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Trabalho em altura",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 121,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Trabalho em altura",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 122,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Segurança com vasos sob pressão",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "id": 123,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "categoria": "oficina",
+      "local": "Pavimento térreo do Bloco D",
+      "titulo": "Segurança com vasos sob pressão"
+    },
+    {
+      "id": 124,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Segurança com vasos sob pressão",
+      "local": "Pavimento térreo do Bloco D",
+      "categoria": "oficina"
+    },
+    {
+      "local": "Pavimento térreo do Bloco D",
+      "id": 125,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Câmara Anecóica",
+      "categoria": "oficina"
+    },
+    {
+      "local": "Pavimento térreo do Bloco D",
+      "id": 126,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Câmara Anecóica",
+      "categoria": "oficina"
+    },
+    {
+      "local": "Pavimento térreo do Bloco D",
+      "id": 127,
+      "dia": "sexta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Câmara Anecóica",
+      "categoria": "oficina"
+    },
+    {
+      "local": "Pavimento térreo do Bloco D",
+      "id": 128,
+      "dia": "quarta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Primeiros Socorros",
+      "categoria": "oficina"
+    },
+    {
+      "local": "Pavimento térreo do Bloco D",
+      "id": 129,
+      "dia": "quinta",
+      "inicio": "10h00",
+      "fim": "21h00",
+      "titulo": "Primeiros Socorros",
+      "categoria": "oficina"
+    },
+    {
+      "local": "Pavimento térreo do Bloco D",
+      "id": 130,
+      "dia": "sexta",
+      "fim": "21h00",
+      "inicio": "10h00",
+      "titulo": "Primeiros Socorros",
+      "categoria": "oficina"
     }
   ]
 }
