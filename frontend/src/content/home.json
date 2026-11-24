@@ -82,6 +82,7 @@
     { "nome": "MCM – Museu de Ciências Morfológicas", "logo": "/uploads/logos/mcm-2048x1024.png" }
   ],
   "realizacao": [
-    { "nome": "Instituto Federal do Rio Grande do Norte – Campus Natal-Central", "logo": "/uploads/logos/ifrn.png" }
+    { "nome": "Instituto Federal do Rio Grande do Norte – Campus Natal-Central", "logo": "/uploads/logos/ifrn.png" },
+    { "nome": "DIREX – Diretoria de Extensão", "logo": "/uploads/logos/direx.png" }
   ]
 }

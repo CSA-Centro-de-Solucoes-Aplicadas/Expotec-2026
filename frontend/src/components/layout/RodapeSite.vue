@@ -66,7 +66,7 @@ footer {
 .realizacao {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
     gap: 1.5rem 3rem;
     margin: 0;
     padding: 0;
@@ -78,7 +78,12 @@ footer {
     height: 2.75rem;
     width: auto;
 }
-
+.realizacao li:nth-child(1) > img{
+    height: 4.3rem;
+}
+.realizacao li:nth-child(2) > img{
+    height: 1.9rem;
+}
 address {
     display: flex;
     flex-direction: column;
