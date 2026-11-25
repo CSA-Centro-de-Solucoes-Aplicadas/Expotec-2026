@@ -16,4 +16,15 @@ export const dias = [
   { id: 'sexta', nome: 'Sexta', data: '27/11', cor: '#a86bff', forma: 'circulo', corForma: '#7323d8' },
 ]
 
-export const atividades = Object.values(arquivos).sort((a, b) => Number(a.id) - Number(b.id))
+const horarioEmMinutos = (horario = '') => {
+  const [hora = '0', minuto = '0'] = String(horario).trim().split(/[h:]/)
+  return Number(hora) * 60 + Number(minuto)
+}
+
+const ordemDias = { quarta: 1, quinta: 2, sexta: 3 }
+
+export const atividades = Object.values(arquivos).sort((a, b) => {
+  const diffDia = (ordemDias[a.dia] || 99) - (ordemDias[b.dia] || 99)
+  if (diffDia !== 0) return diffDia
+  return horarioEmMinutos(a.inicio) - horarioEmMinutos(b.inicio)
+})

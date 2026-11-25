@@ -96,22 +96,34 @@ collections:
     folder: frontend/src/content/atividades
     create: true
     format: json
+    extension: json
     identifier_field: titulo
     slug: "{{fields.id}}"
     summary: "{{fields.dia}} · {{fields.inicio}} · {{fields.titulo}}"
-    sortable_fields: ["id", "dia", "inicio", "titulo", "categoria"]
+    sortable_fields: ["dia", "inicio", "titulo", "categoria"]
     view_filters:
-      - label: Quarta
+      - name: quarta
+        label: Quarta
         field: dia
         pattern: quarta
-      - label: Quinta
+      - name: quinta
+        label: Quinta
         field: dia
         pattern: quinta
-      - label: Sexta
+      - name: sexta
+        label: Sexta
         field: dia
         pattern: sexta
+    view_groups:
+      - label: Por Dia
+        field: dia
+      - label: Por Categoria
+        field: categoria
     fields:
-      - { label: ID, name: id, widget: number, value_type: int, hint: "Número único, que não se repita em outra atividade" }
+      - label: ID
+        name: id
+        widget: hidden
+        default: "{{uuid_short}}"
       - label: Dia
         name: dia
         widget: select
