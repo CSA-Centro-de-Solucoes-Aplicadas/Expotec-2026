@@ -1,5 +1,5 @@
-// Atividades editáveis pelo Decap CMS em src/content/atividades.json; dias e categorias são fixos do evento
-import conteudo from '@/content/atividades.json'
+// Atividades editáveis pelo CMS em src/content/atividades/*.json; dias e categorias são fixos do evento
+const arquivos = import.meta.glob('@/content/atividades/*.json', { eager: true, import: 'default' })
 
 export const categorias = [
   { id: 'palestra', nome: 'Palestra', forma: 'semicirculo', cor: '#5300bb' },
@@ -16,4 +16,4 @@ export const dias = [
   { id: 'sexta', nome: 'Sexta', data: '27/11', cor: '#a86bff', forma: 'circulo', corForma: '#7323d8' },
 ]
 
-export const atividades = conteudo.atividades
+export const atividades = Object.values(arquivos).sort((a, b) => Number(a.id) - Number(b.id))

@@ -92,39 +92,47 @@ collections:
   # ───────── Programação ─────────
   - name: programacao
     label: Programação
-    files:
-      - name: atividades
-        label: Atividades
-        file: frontend/src/content/atividades.json
-        fields:
-          - label: Atividades
-            name: atividades
-            widget: list
-            label_singular: Atividade
-            summary: "{{fields.dia}} · {{fields.inicio}} · {{fields.titulo}}"
-            fields:
-              - { label: ID, name: id, widget: number, value_type: int, hint: "Número único, que não se repita em outra atividade" }
-              - label: Dia
-                name: dia
-                widget: select
-                options:
-                  - { label: Quarta, value: quarta }
-                  - { label: Quinta, value: quinta }
-                  - { label: Sexta, value: sexta }
-              - { label: Início, name: inicio, widget: string, hint: "Ex.: 08h00" }
-              - { label: Fim, name: fim, widget: string, hint: "Ex.: 12h00" }
-              - { label: Título, name: titulo, widget: string }
-              - { label: Local, name: local, widget: string }
-              - label: Categoria
-                name: categoria
-                widget: select
-                options:
-                  - { label: Palestra, value: palestra }
-                  - { label: Oficina, value: oficina }
-                  - { label: Minicurso, value: minicurso }
-                  - { label: Exposição, value: exposicao }
-                  - { label: Cultural, value: cultural }
-              - { label: Link de inscrição, name: inscricao, widget: string, required: false, hint: "Link do SUAP para esta atividade. Sem link, o botão Inscrever-se não aparece" }
+    label_singular: Atividade
+    folder: frontend/src/content/atividades
+    create: true
+    format: json
+    identifier_field: titulo
+    slug: "{{fields.id}}"
+    summary: "{{fields.dia}} · {{fields.inicio}} · {{fields.titulo}}"
+    sortable_fields: ["id", "dia", "inicio", "titulo", "categoria"]
+    view_filters:
+      - label: Quarta
+        field: dia
+        pattern: quarta
+      - label: Quinta
+        field: dia
+        pattern: quinta
+      - label: Sexta
+        field: dia
+        pattern: sexta
+    fields:
+      - { label: ID, name: id, widget: number, value_type: int, hint: "Número único, que não se repita em outra atividade" }
+      - label: Dia
+        name: dia
+        widget: select
+        options:
+          - { label: Quarta, value: quarta }
+          - { label: Quinta, value: quinta }
+          - { label: Sexta, value: sexta }
+      - { label: Início, name: inicio, widget: string, hint: "Ex.: 08h00" }
+      - { label: Fim, name: fim, widget: string, hint: "Ex.: 12h00" }
+      - { label: Título, name: titulo, widget: string }
+      - { label: Local, name: local, widget: string }
+      - label: Categoria
+        name: categoria
+        widget: select
+        options:
+          - { label: Palestra, value: palestra }
+          - { label: Oficina, value: oficina }
+          - { label: Minicurso, value: minicurso }
+          - { label: Exposição, value: exposicao }
+          - { label: Cultural, value: cultural }
+      - { label: Link de inscrição, name: inscricao, widget: string, required: false, hint: "Link do SUAP para esta atividade. Sem link, o botão Inscrever-se não aparece" }
 
   # ───────── Página Documentos ─────────
   - name: documentos
