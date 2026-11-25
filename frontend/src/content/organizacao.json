@@ -5,10 +5,38 @@
       "forma": "circulo",
       "cor": "#ff8c1a",
       "membros": [
-        { "nome": "Brenda Camilli Alves Fernandes", "funcao": "Coordenadora" },
-        { "nome": "Alessandra Fortes Gabino Araujo" },
-        { "nome": "Gustavo André Pereira de Brito" },
-        { "nome": "Jacyra Inke Gomes da Silva" }
+        {
+          "nome": "Brenda Camilli Alves Fernandes",
+          "funcao": "Coordenadora Geral"
+        },
+        {
+          "nome": "Alessandra Fortes Gabino Araujo",
+          "funcao": ""
+        },
+        {
+          "nome": "Alexandre Luiz Bittencourt",
+          "funcao": ""
+        },
+        {
+          "nome": "Bruna Lopes Tupinambá Coutinho",
+          "funcao": ""
+        },
+        {
+          "nome": "Gustavo André Pereira de Brito",
+          "funcao": ""
+        },
+        {
+          "nome": "Jacyra Inke Gomes da Silva",
+          "funcao": ""
+        },
+        {
+          "nome": "Marcilene Franca da Silva Tabosa",
+          "funcao": ""
+        },
+        {
+          "nome": "Sirley Fonseca de Oliveira Dutra",
+          "funcao": ""
+        }
       ]
     },
     {
@@ -16,8 +44,14 @@
       "forma": "triangulo",
       "cor": "#2eb10a",
       "membros": [
-        { "nome": "Danielle Gomes de Freitas Medeiros" },
-        { "nome": "Lúcia de Fátima Lúcio Gomes da Costa" }
+        {
+          "nome": "Danielle Gomes de Freitas Medeiros",
+          "funcao": ""
+        },
+        {
+          "nome": "Lúcia de Fátima Lúcio Gomes da Costa",
+          "funcao": ""
+        }
       ]
     },
     {
@@ -25,15 +59,42 @@
       "forma": "semicirculo",
       "cor": "#29d0d3",
       "membros": [
-        { "nome": "Adriana Claudia Camara da Silva" },
-        { "nome": "Amadeu Albino Junior" },
-        { "nome": "Carla Aguiar Falcão" },
-        { "nome": "João Correia Saraiva Junior" },
-        { "nome": "Kalina Alessandra Rodrigues de Paiva" },
-        { "nome": "Marcelo Henrique Carneiro Camilo" },
-        { "nome": "Rafael Pereira de Melo" },
-        { "nome": "Valdier Ribeiro Santos Júnior" },
-        { "nome": "Victor Anderson Verissimo de Oliveira" }
+        {
+          "nome": "Adriana Claudia Camara da Silva",
+          "funcao": ""
+        },
+        {
+          "nome": "Amadeu Albino Junior",
+          "funcao": ""
+        },
+        {
+          "nome": "Carla Aguiar Falcão",
+          "funcao": ""
+        },
+        {
+          "nome": "João Correia Saraiva Junior",
+          "funcao": ""
+        },
+        {
+          "nome": "Kalina Alessandra Rodrigues de Paiva",
+          "funcao": ""
+        },
+        {
+          "nome": "Marcelo Henrique Carneiro Camilo",
+          "funcao": ""
+        },
+        {
+          "nome": "Rafael Pereira de Melo",
+          "funcao": ""
+        },
+        {
+          "nome": "Valdier Ribeiro Santos Júnior",
+          "funcao": ""
+        },
+        {
+          "nome": "Victor Anderson Verissimo de Oliveira",
+          "funcao": ""
+        }
       ]
     },
     {
@@ -41,32 +102,63 @@
       "forma": "quadrado",
       "cor": "#5300bb",
       "membros": [
-        { "nome": "Aldayr Dantas de Araújo Júnior" },
-        { "nome": "Alessandro Pontes Cavalcanti" },
-        { "nome": "Gileno José de Vasconcelos Villar" },
-        { "nome": "Gilson Garcia da Silva" },
-        { "nome": "Jacques Cousteau da Silva Borges" }
+        {
+          "nome": "Aldayr Dantas de Araújo Júnior",
+          "funcao": ""
+        },
+        {
+          "nome": "Alessandro Pontes Cavalcanti",
+          "funcao": ""
+        },
+        {
+          "nome": "Gileno José de Vasconcelos Villar",
+          "funcao": ""
+        },
+        {
+          "nome": "Gilson Garcia da Silva",
+          "funcao": ""
+        },
+        {
+          "nome": "Jacques Cousteau da Silva Borges",
+          "funcao": ""
+        }
       ]
     },
     {
       "nome": "Coordenação de Desporto",
       "forma": "circulo",
       "cor": "#ff55ff",
-      "membros": [{ "nome": "Maria Elizabete Sobral Paiva de Aquino" }]
+      "membros": [
+        {
+          "nome": "Maria Elizabete Sobral Paiva de Aquino",
+          "funcao": ""
+        }
+      ]
     },
     {
       "nome": "Coordenação de Administração Escolar",
       "forma": "triangulo",
       "cor": "#e02929",
-      "membros": [{ "nome": "Maria Valiene Gomes de Oliveira" }]
+      "membros": [
+        {
+          "nome": "Maria Valiene Gomes de Oliveira",
+          "funcao": ""
+        }
+      ]
     },
     {
       "nome": "Diretoria de Pesquisa e Inovação",
       "forma": "semicirculo",
       "cor": "#fdc803",
       "membros": [
-        { "nome": "Allana Karyne da Costa Nobre" },
-        { "nome": "Handson Cláudio Dias Pimenta" }
+        {
+          "nome": "Allana Karyne da Costa Nobre",
+          "funcao": ""
+        },
+        {
+          "nome": "Handson Cláudio Dias Pimenta",
+          "funcao": ""
+        }
       ]
     },
     {
@@ -74,14 +166,38 @@
       "forma": "circulo",
       "cor": "#ff8c1a",
       "membros": [
-        { "nome": "Ceres Virginia da Costa Dantas" },
-        { "nome": "Dayana Melo Torre" },
-        { "nome": "Djalma Valério Ribeiro Neto" },
-        { "nome": "Luciana de Castro Medeiros" },
-        { "nome": "Maria Carolina de Albuquerque Feitosa Amador" },
-        { "nome": "Narla Sathler Musse de Oliveira" },
-        { "nome": "Ramon Evangelista dos Anjos Paiva" },
-        { "nome": "Ricardo Luiz Machado" }
+        {
+          "nome": "Ceres Virginia da Costa Dantas",
+          "funcao": ""
+        },
+        {
+          "nome": "Dayana Melo Torre",
+          "funcao": ""
+        },
+        {
+          "nome": "Djalma Valério Ribeiro Neto",
+          "funcao": ""
+        },
+        {
+          "nome": "Luciana de Castro Medeiros",
+          "funcao": ""
+        },
+        {
+          "nome": "Maria Carolina de Albuquerque Feitosa Amador",
+          "funcao": ""
+        },
+        {
+          "nome": "Narla Sathler Musse de Oliveira",
+          "funcao": ""
+        },
+        {
+          "nome": "Ramon Evangelista dos Anjos Paiva",
+          "funcao": ""
+        },
+        {
+          "nome": "Ricardo Luiz Machado",
+          "funcao": ""
+        }
       ]
     },
     {
@@ -89,10 +205,22 @@
       "forma": "triangulo",
       "cor": "#2eb10a",
       "membros": [
-        { "nome": "Esmaileini dos Santos Borges" },
-        { "nome": "José Heriberto de Oliveira" },
-        { "nome": "Gustavo Moura Cavalcanti" },
-        { "nome": "Tatiana Cardoso Delgado Kobayashi" }
+        {
+          "nome": "Esmaileini dos Santos Borges",
+          "funcao": ""
+        },
+        {
+          "nome": "José Heriberto de Oliveira",
+          "funcao": ""
+        },
+        {
+          "nome": "Gustavo Moura Cavalcanti",
+          "funcao": ""
+        },
+        {
+          "nome": "Tatiana Cardoso Delgado Kobayashi",
+          "funcao": ""
+        }
       ]
     },
     {
@@ -100,28 +228,52 @@
       "forma": "semicirculo",
       "cor": "#29d0d3",
       "membros": [
-        { "nome": "Evilane Cássia de Farias" },
-        { "nome": "Maria Cleide Ribeiro de Oliveira" },
-        { "nome": "Sarah Araújo Costa" }
+        {
+          "nome": "Evilane Cássia de Farias",
+          "funcao": ""
+        },
+        {
+          "nome": "Maria Cleide Ribeiro de Oliveira",
+          "funcao": ""
+        },
+        {
+          "nome": "Sarah Araújo Costa",
+          "funcao": ""
+        }
       ]
     },
     {
       "nome": "Diretoria de Ensino",
       "forma": "quadrado",
       "cor": "#5300bb",
-      "membros": [{ "nome": "Silvana Andrade de Souza" }]
+      "membros": [
+        {
+          "nome": "Silvana Andrade de Souza",
+          "funcao": ""
+        }
+      ]
     },
     {
       "nome": "Coordenação de Comunicação Social e Eventos",
       "forma": "circulo",
       "cor": "#ff55ff",
-      "membros": [{ "nome": "Tania Carvalho da Silva" }]
+      "membros": [
+        {
+          "nome": "Tania Carvalho da Silva",
+          "funcao": ""
+        }
+      ]
     },
     {
       "nome": "Coordenação de Comunicações e Segurança",
       "forma": "triangulo",
       "cor": "#e02929",
-      "membros": [{ "nome": "Tonny Medeiros Martinho" }]
+      "membros": [
+        {
+          "nome": "Tonny Medeiros Martinho",
+          "funcao": ""
+        }
+      ]
     }
   ]
 }
